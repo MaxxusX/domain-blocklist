@@ -80,4 +80,4 @@ Very aggressively blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing,
  - [HaGeZi Native Tracker - Vivo](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/native.vivo-onlydomains.txt)
  - [HaGeZi Native Tracker - Oppo/Realme](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/native.oppo-realme-onlydomains.txt)
  - [HaGeZi Native Tracker - Xiaomi](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/native.xiaomi-onlydomains.txt)
- - [HaGeZi Native Tracker - TikTok (Agressive)](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/native.tiktok.extended-onlydomains.txt)
+ - [HaGeZi Native Tracker - TikTok (Aggressive)](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/native.tiktok.extended-onlydomains.txt)

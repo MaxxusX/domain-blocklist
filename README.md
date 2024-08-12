@@ -31,7 +31,7 @@ Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fr
 ## whitelist
 ## blacklist
 ## included blacklists
- - No Meta
+ - [No Meta](#no-metafacebook)
  - [OISD Big](https://raw.githubusercontent.com/sjhgvr/oisd/main/domainswild2_big.txt)
  - [HaGeZi Ultimate](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/ultimate-onlydomains.txt)
  - [HaGeZi Threat Intelligence Feeds](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/tif-onlydomains.txt)
@@ -43,8 +43,8 @@ Very aggressively blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing,
 ## whitelist
 ## blacklist
 ## included blacklists
- - No Meta
- - No ByteDance
+ - [No Meta](#no-metafacebook)
+ - [No ByteDance](#no-bytedancetiktok)
  - [OISD Big](https://raw.githubusercontent.com/sjhgvr/oisd/main/domainswild2_big.txt)
  - [OISD NSFW](https://raw.githubusercontent.com/sjhgvr/oisd/main/domainswild2_nsfw.txt)
  - [HaGeZi Ultimate](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/ultimate-onlydomains.txt)

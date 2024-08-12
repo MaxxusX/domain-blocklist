@@ -4,6 +4,8 @@
 
 ## No Meta/Facebook
 Blocks Meta/Facebook and all services owned by it.
+> [!CAUTION]
+> This breaks stuff!
 
 ## No ByteDance/TikTok
 Blocks ByteDance and all services owned by it (eg. TikTok)

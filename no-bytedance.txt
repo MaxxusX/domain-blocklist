@@ -319,6 +319,8 @@ tiktokcdn.com.wsdvs.com
 tiktokcdn.liveplay.myqcloud.com
 tiktokd.net
 tiktokd.org
+tiktokeu-cdn.com
+tiktokrow-cdn.com
 tiktokv.com
 tiktokv.com.edgekey.net
 tiktokv.com.edgesuite.net

@@ -83,11 +83,6 @@ facebooi.com
 facebooik.com
 facebooik.org
 facebooj.com
-facebook4business.com
-facebook30.com
-facebook30.net
-facebook30.org
-facebook123.org
 facebook-corp.com
 facebook-covid-19.com
 facebook-ebook.com
@@ -131,6 +126,11 @@ facebook.shop
 facebook.tv
 facebook.us
 facebook.wang
+facebook123.org
+facebook30.com
+facebook30.net
+facebook30.org
+facebook4business.com
 facebookads.com
 facebookadvertisingsecrets.com
 facebookappcenter.info
@@ -513,10 +513,10 @@ nbabot.net
 newsfeed.com
 nextstop.com
 ocul.us
-oculus3d.com
-oculus2014.com
 oculus-china.com
 oculus.com
+oculus2014.com
+oculus3d.com
 oculusblog.com
 oculusbrand.com
 oculuscasino.net

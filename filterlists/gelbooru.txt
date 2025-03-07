@@ -1,0 +1,28 @@
+[Adblock Plus 3.13]
+! Title: Gelbooru Filter
+! Description: Removes ads on Gelbooru
+! Last modified: 2025 March 6
+! Expires: 14 days
+! Homepage: https://github.com/maxxusx/domain-blocklist
+
+*$3p,from=gelbooru.com
+@@||ajax.googleapis.com/ajax/libs/jquery^$from=gelbooru.com
+
+||realsrv.com^$from=gelbooru.com
+||isolatedovercomepasted.com^
+||bankingbloatedcaptive.com^
+||divisiondrearilyunfiled.com^
+||diagramjawlineunhappy.com^
+||lookmommynohands.com^
+||dinvziwfia.com^
+||ohgqwicco.com^
+||mnaspm.com^
+
+gelbooru.com##body > div#container > main > div.mainBodyPadding > div:has(> script[src*="isolatedovercomepasted.com"])
+gelbooru.com##body > div#container > main > div.mainBodyPadding > div:has(> script[src*="bankingbloatedcaptive.com"])
+gelbooru.com##body > div#container > main > div.mainBodyPadding > div:has(> script[src*="divisiondrearilyunfiled.com"])
+gelbooru.com##body > div#container > main > div.mainBodyPadding > div:has(> script[src*="diagramjawlineunhappy.com"])
+gelbooru.com##body > div#container > main > div.mainBodyPadding > div:has(> iframe)
+gelbooru.com##body > div#container > main > div.headerAd
+gelbooru.com##body > div#container > main > div.footerAd
+gelbooru.com##body > div#container > main > div.footerAd2

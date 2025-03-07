@@ -1,0 +1,8 @@
+[Adblock Plus 3.13]
+! Title: Clean MDN
+! Description: Removes ads and other annoyances on MDN Web Docs
+! Last modified: 2025 March 6
+! Expires: 14 days
+! Homepage: https://github.com/maxxusx/domain-blocklist
+
+developer.mozilla.org##div.sidebar-container > div.toc-container > section.place.side

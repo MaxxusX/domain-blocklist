@@ -1,4 +1,9 @@
-! stack overflow
+[Adblock Plus 3.13]
+! Title: Clean StackOverflow
+! Description: Removes annoyances and simplifies the interface of StackOverflow
+! Last modified: 06 Mar 2025 10:38 CST
+! Expires: 14 days
+! Homepage: https://github.com/maxxusx/domain-blocklist
 
 ! general site
 stackoverflow.com##body > header

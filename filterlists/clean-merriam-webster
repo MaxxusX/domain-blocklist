@@ -1,0 +1,30 @@
+[Adblock Plus 3.13]
+! Title: Clean Merriam-Webster
+! Description: Removes annoyances and simplifies the interface of Merriam-Webster
+! Last modified: 2025 March 6
+! Expires: 14 days
+! Homepage: https://github.com/maxxusx/domain-blocklist
+
+merriam-webster.com###main-banner-ad-container
+merriam-webster.com###definition-right-rail
+merriam-webster.com###base-header > nav > div.navigation-container
+merriam-webster.com###examples
+merriam-webster.com###word-history
+merriam-webster.com###related-phrases
+merriam-webster.com###related-articles
+merriam-webster.com###nearby-entries
+merriam-webster.com###citations
+merriam-webster.com###social-links
+merriam-webster.com###subscribe-unabridged
+merriam-webster.com##.main-container > .additional-content-area
+merriam-webster.com##.global-footer > .footer-mast > .mw-logo-section
+merriam-webster.com##.global-footer > .footer-mast > .footer-mast-content > .footer-subscribe-block
+merriam-webster.com##.global-footer > .footer-mast > .footer-mast-content > .follow-us
+
+!#if ext_ublock
+merriam-webster.com##.global-footer > .footer-foot:style(min-height: auto !important;)
+!#endif
+
+!#if adguard
+merriam-webster.com#$#.global-footer > .footer-foot { min-height: auto !important; }
+!#endif

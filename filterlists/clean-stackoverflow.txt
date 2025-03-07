@@ -1,0 +1,80 @@
+! stack overflow
+
+! general site
+stackoverflow.com##body > header
+stackoverflow.com###left-sidebar
+stackoverflow.com###sidebar
+stackoverflow.com###footer > .site-footer--container > .site-footer-logo
+stackoverflow.com###footer > .site-footer--container > .site-footer-nav
+
+
+! question
+
+# ask question button
+stackoverflow.com###question-header > div
+
+# upvote button
+stackoverflow.com###question .votecell > .js-voting-container > .js-vote-up-btn
+stackoverflow.com###question .votecell > .js-voting-container > .js-vote-up-btn + .s-popover
+
+# downvote button
+stackoverflow.com###question .votecell > .js-voting-container > .js-vote-down-btn
+
+# bookmark button
+stackoverflow.com###question .votecell > .js-voting-container > .js-saves-btn
+stackoverflow.com###question .votecell > .js-voting-container > .js-saves-btn + .s-popover
+
+# revisions button
+stackoverflow.com###question .votecell > .js-voting-container > .js-post-issue
+stackoverflow.com###question .votecell > .js-voting-container > .js-post-issue + .s-popover
+
+# actions (share, improve, follow)
+stackoverflow.com###question .postcell .js-post-menu
+
+# "add a comment" button
+stackoverflow.com###question .js-post-comments-component > div:not(.js-comments-container) > .js-add-link
+stackoverflow.com###question .js-post-comments-component > div:not(.js-comments-container) > .js-link-separator
+
+
+! answers
+
+# answer upvote button
+stackoverflow.com###answers > .answer .js-voting-container > .js-vote-up-btn
+stackoverflow.com###answers > .answer .js-voting-container > .js-vote-up-btn + .s-popover
+
+# answer downvote button
+stackoverflow.com###answers > .answer .js-voting-container > .js-vote-down-btn
+
+# answer bookmark button
+stackoverflow.com###answers > .answer .js-voting-container > .js-saves-btn
+stackoverflow.com###answers > .answer .js-voting-container > .js-saves-btn + .s-popover
+
+# answer revisions button
+stackoverflow.com###answers > .answer .js-voting-container > .js-post-issue
+stackoverflow.com###answers > .answer .js-voting-container > .js-post-issue + .s-popover
+
+# answer actions (share, improve, follow)
+stackoverflow.com###answers > .answer .answercell .js-post-menu
+
+# answer "add a comment" button
+stackoverflow.com###answers > .answer .js-post-comments-component > div:not(.js-comments-container) > .js-add-link
+stackoverflow.com###answers > .answer .js-post-comments-component > div:not(.js-comments-container) > .js-link-separator
+
+# "your answer" section
+stackoverflow.com###answers > #post-form
+
+# "browse other questions"
+stackoverflow.com###answers > .bottom-notice
+
+
+! fixes
+!#if ext_ublock
+stackoverflow.com##body.question-page:style(padding-top: 0;)
+stackoverflow.com###content:style(margin: 0;)
+stackoverflow.com###mainbar:style(width: 100%;)
+!#endif
+!#if adguard
+stackoverflow.com#$#body.question-page { padding-top: 0; }
+stackoverflow.com#$##content { margin: 0; }
+stackoverflow.com#$##mainbar { width: 100%; }
+!#endif

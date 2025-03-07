@@ -1,23 +1,37 @@
 [Adblock Plus 3.13]
 ! Title: Gelbooru Filter
-! Description: Removes ads on Gelbooru
+! Description: Removes ads, auto-enables dark mode, and auto-enables "Show All Site Content" on Gelbooru
 ! Last modified: 2025 March 6
 ! Expires: 14 days
 ! Homepage: https://github.com/maxxusx/domain-blocklist
 
+# turn on dark mode and "Show All Site Content"
+!#if ext_ublock
+gelbooru.com##+js(trusted-set-cookie, dark_mode, kthx)
+gelbooru.com##+js(trusted-set-cookie, fringeBenefits, yup)
+!#endif
+!#if adguard
+gelbooru.com#%#//scriptlet('trusted-set-cookie', 'dark_mode', 'kthx')
+gelbooru.com#%#//scriptlet('trusted-set-cookie', 'fringeBenefits', 'yup')
+!#endif
+
 *$3p,from=gelbooru.com
 @@||ajax.googleapis.com/ajax/libs/jquery^$from=gelbooru.com
 
+# ad-serving domains
 ||realsrv.com^$from=gelbooru.com
 ||isolatedovercomepasted.com^
 ||bankingbloatedcaptive.com^
 ||divisiondrearilyunfiled.com^
 ||diagramjawlineunhappy.com^
+
+# probably ad-serving domains
 ||lookmommynohands.com^
 ||dinvziwfia.com^
 ||ohgqwicco.com^
 ||mnaspm.com^
 
+# actually hide the ads
 gelbooru.com##body > div#container > main > div.mainBodyPadding > div:has(> script[src*="isolatedovercomepasted.com"])
 gelbooru.com##body > div#container > main > div.mainBodyPadding > div:has(> script[src*="bankingbloatedcaptive.com"])
 gelbooru.com##body > div#container > main > div.mainBodyPadding > div:has(> script[src*="divisiondrearilyunfiled.com"])

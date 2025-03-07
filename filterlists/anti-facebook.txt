@@ -1,0 +1,14 @@
+[Adblock Plus 3.13]
+! Title: Anti-Facebook
+! Description: Block facebook
+! Last modified: 2025 March 6
+! Expires: 14 days
+! Homepage: https://github.com/maxxusx/domain-blocklist
+
+# /cdn-cgi/pe/bag2 is CloudFlare's "Rocket Loader"
+/cdn-cgi/pe/bag2?*connect.facebook.com
+/cdn-cgi/pe/bag2?*connect.facebook.net
+||fbcdn-photos-*.akamaihd.net^
+||fbcdn-profile-*.akamaihd.net^
+||fbcdn-sphotos-*.akamaihd.net^
+||fbexternal-*.akamaihd.net^

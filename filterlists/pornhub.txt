@@ -1,0 +1,51 @@
+[Adblock Plus 3.13]
+! Title: Pornhub Filter
+! Description: Blocks ads, bypasses age gate, disables recommendations, and removes tracking cookies on Pornhub
+! Last modified: 06 Mar 2025 10:38 CST
+! Expires: 14 days
+! Homepage: https://github.com/maxxusx/domain-blocklist
+
+# ad domain
+# this is generic cuz it's apparently used by a lot of other porn sites as well
+||trafficjunky.com^
+
+# fix age gate button
+@@||pornhub.com/_i?type=event&event=enter^
+
+# disable recommendations
+!#if ext_ublock
+pornhub.com##+js(set-cookie, hideRecommendations, 1)
+!#endif
+!#if adguard
+pornhub.com#%#//scriptlet('set-cookie', 'hideRecommendations', '1')
+!#endif
+
+# bypass age gate
+!#if ext_ublock
+pornhub.com##+js(set-cookie, accessAgeDisclaimerPH, 1)
+!#endif
+!#if adguard
+pornhub.com#%#//scriptlet('set-cookie', 'accessAgeDisclaimerPH', '1')
+!#endif
+
+# remove tracking cookies
+!#if ext_ublock
+pornhub.com##+js(cookie-remover, ss)
+pornhub.com##+js(cookie-remover, bs)
+pornhub.com##+js(cookie-remover, comp_detect-cookies)
+pornhub.com##+js(cookie-remover, platform)
+pornhub.com##+js(cookie-remover, sessid)
+pornhub.com##+js(cookie-remover, ua)
+pornhub.com##+js(cookie-remover, __l)
+pornhub.com##+js(cookie-remover, __s)
+!#endif
+!#if adguard
+pornhub.com#%#//scriptlet('remove-cookie', 'ss')
+pornhub.com#%#//scriptlet('remove-cookie', 'bs')
+pornhub.com#%#//scriptlet('remove-cookie', 'comp_detect-cookies')
+pornhub.com#%#//scriptlet('remove-cookie', 'platform')
+pornhub.com#%#//scriptlet('remove-cookie', 'sessid')
+pornhub.com#%#//scriptlet('remove-cookie', 'ua')
+pornhub.com#%#//scriptlet('remove-cookie', '__l')
+pornhub.com#%#//scriptlet('remove-cookie', '__s')
+!#endif

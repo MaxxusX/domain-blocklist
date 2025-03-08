@@ -1,85 +1,68 @@
-[Adblock Plus 3.13]
-! Title: Clean StackOverflow
-! Description: Removes annoyances and simplifies the interface of StackOverflow
-! Last modified: 2025 March 6
-! Expires: 14 days
-! Homepage: https://github.com/maxxusx/domain-blocklist
+!title:    Clean StackOverflow
+!desc:     Removes annoyances and simplifies the interface of StackOverflow
+!modified: 2025 March 6
 
-! general site
-stackoverflow.com##body > header
-stackoverflow.com###left-sidebar
-stackoverflow.com###sidebar
-stackoverflow.com###footer > .site-footer--container > .site-footer-logo
-stackoverflow.com###footer > .site-footer--container > .site-footer-nav
-
-
-! question
+# general
+@cosmetic, stackoverflow.com; body > header
+@cosmetic, stackoverflow.com; #left-sidebar
+@cosmetic, stackoverflow.com; #sidebar
+@cosmetic, stackoverflow.com; #footer > .site-footer--container > .site-footer-logo
+@cosmetic, stackoverflow.com; #footer > .site-footer--container > .site-footer-nav
 
 # ask question button
-stackoverflow.com###question-header > div
+@cosmetic, stackoverflow.com; #question-header > div
 
 # upvote button
-stackoverflow.com###question .votecell > .js-voting-container > .js-vote-up-btn
-stackoverflow.com###question .votecell > .js-voting-container > .js-vote-up-btn + .s-popover
+@cosmetic, stackoverflow.com; #question .votecell > .js-voting-container > .js-vote-up-btn
+@cosmetic, stackoverflow.com; #question .votecell > .js-voting-container > .js-vote-up-btn + .s-popover
 
 # downvote button
-stackoverflow.com###question .votecell > .js-voting-container > .js-vote-down-btn
+@cosmetic, stackoverflow.com; #question .votecell > .js-voting-container > .js-vote-down-btn
 
 # bookmark button
-stackoverflow.com###question .votecell > .js-voting-container > .js-saves-btn
-stackoverflow.com###question .votecell > .js-voting-container > .js-saves-btn + .s-popover
+@cosmetic, stackoverflow.com; #question .votecell > .js-voting-container > .js-saves-btn
+@cosmetic, stackoverflow.com; #question .votecell > .js-voting-container > .js-saves-btn + .s-popover
 
 # revisions button
-stackoverflow.com###question .votecell > .js-voting-container > .js-post-issue
-stackoverflow.com###question .votecell > .js-voting-container > .js-post-issue + .s-popover
+@cosmetic, stackoverflow.com; #question .votecell > .js-voting-container > .js-post-issue
+@cosmetic, stackoverflow.com; #question .votecell > .js-voting-container > .js-post-issue + .s-popover
 
 # actions (share, improve, follow)
-stackoverflow.com###question .postcell .js-post-menu
+@cosmetic, stackoverflow.com; #question .postcell .js-post-menu
 
 # "add a comment" button
-stackoverflow.com###question .js-post-comments-component > div:not(.js-comments-container) > .js-add-link
-stackoverflow.com###question .js-post-comments-component > div:not(.js-comments-container) > .js-link-separator
-
-
-! answers
+@cosmetic, stackoverflow.com; #question .js-post-comments-component > div:not(.js-comments-container) > .js-add-link
+@cosmetic, stackoverflow.com; #question .js-post-comments-component > div:not(.js-comments-container) > .js-link-separator
 
 # answer upvote button
-stackoverflow.com###answers > .answer .js-voting-container > .js-vote-up-btn
-stackoverflow.com###answers > .answer .js-voting-container > .js-vote-up-btn + .s-popover
+@cosmetic, stackoverflow.com; #answers > .answer .js-voting-container > .js-vote-up-btn
+@cosmetic, stackoverflow.com; #answers > .answer .js-voting-container > .js-vote-up-btn + .s-popover
 
 # answer downvote button
-stackoverflow.com###answers > .answer .js-voting-container > .js-vote-down-btn
+@cosmetic, stackoverflow.com; #answers > .answer .js-voting-container > .js-vote-down-btn
 
 # answer bookmark button
-stackoverflow.com###answers > .answer .js-voting-container > .js-saves-btn
-stackoverflow.com###answers > .answer .js-voting-container > .js-saves-btn + .s-popover
+@cosmetic, stackoverflow.com; #answers > .answer .js-voting-container > .js-saves-btn
+@cosmetic, stackoverflow.com; #answers > .answer .js-voting-container > .js-saves-btn + .s-popover
 
 # answer revisions button
-stackoverflow.com###answers > .answer .js-voting-container > .js-post-issue
-stackoverflow.com###answers > .answer .js-voting-container > .js-post-issue + .s-popover
+@cosmetic, stackoverflow.com; #answers > .answer .js-voting-container > .js-post-issue
+@cosmetic, stackoverflow.com; #answers > .answer .js-voting-container > .js-post-issue + .s-popover
 
 # answer actions (share, improve, follow)
-stackoverflow.com###answers > .answer .answercell .js-post-menu
+@cosmetic, stackoverflow.com; #answers > .answer .answercell .js-post-menu
 
 # answer "add a comment" button
-stackoverflow.com###answers > .answer .js-post-comments-component > div:not(.js-comments-container) > .js-add-link
-stackoverflow.com###answers > .answer .js-post-comments-component > div:not(.js-comments-container) > .js-link-separator
+@cosmetic, stackoverflow.com; #answers > .answer .js-post-comments-component > div:not(.js-comments-container) > .js-add-link
+@cosmetic, stackoverflow.com; #answers > .answer .js-post-comments-component > div:not(.js-comments-container) > .js-link-separator
 
 # "your answer" section
-stackoverflow.com###answers > #post-form
+@cosmetic, stackoverflow.com; #answers > #post-form
 
 # "browse other questions"
-stackoverflow.com###answers > .bottom-notice
+@cosmetic, stackoverflow.com; #answers > .bottom-notice
 
-
-! fixes
-!#if ext_ublock
-stackoverflow.com##body.question-page:style(padding-top: 0;)
-stackoverflow.com###content:style(margin: 0;)
-stackoverflow.com###mainbar:style(width: 100%;)
-!#endif
-!#if adguard
-stackoverflow.com#$#body.question-page { padding-top: 0; }
-stackoverflow.com#$##content { margin: 0; }
-stackoverflow.com#$##mainbar { width: 100%; }
-!#endif
+# fixes
+@restyle,  stackoverflow.com; body.question-page ;=> { padding-top: 0; }
+@restyle,  stackoverflow.com; #content ;=> { margin: 0; }
+@restyle,  stackoverflow.com; #mainbar ;=> { width: 100%; }

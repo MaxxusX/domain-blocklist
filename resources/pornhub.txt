@@ -1,16 +1,13 @@
-[Adblock Plus 3.13]
-! Title: Pornhub Filter
-! Description: Blocks ads, bypasses age gate, disables recommendations, and removes tracking cookies on Pornhub
-! Last modified: 2025 March 6
-! Expires: 14 days
-! Homepage: https://github.com/maxxusx/domain-blocklist
+!title:    Pornhub Filter
+!desc:     Blocks ads, bypasses age gate, disables recommendations, and removes tracking cookies on Pornhub
+!modified: 2025 March 6
 
 # ad domain
 # this is generic cuz it's apparently used by a lot of other porn sites as well
-||trafficjunky.com^
+@domain, trafficjunky.com
 
 # fix age gate button
-@@||pornhub.com/_i?type=event&event=enter^
+~url, pornhub.com/_i?type=event&event=enter
 
 # disable recommendations
 !#if ext_ublock

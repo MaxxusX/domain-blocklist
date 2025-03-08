@@ -1,6 +1,6 @@
 !title:    Anti Devtools Detectors
 !desc:     Blocks those annoying and pointless devtools detectors
-!modified: 2025 March 6
+!modified: 2025 March 8
 
 # https://www.npmjs.com/package/devtools-detector
 @url-path, /node_modules/devtools-detector

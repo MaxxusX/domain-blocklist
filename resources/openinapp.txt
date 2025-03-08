@@ -1,49 +1,44 @@
-[Adblock Plus 3.13]
-! Title: OpenInApp Filter
-! Description: Blocks ads/analytics on OpenInApp, and blocks connections to it's paywall "link shorteners"
-! Last modified: 2025 March 6
-! Expires: 14 days
-! Homepage: https://github.com/maxxusx/domain-blocklist
+!title:    OpenInApp Filter
+!desc:     Blocks ads/analytics on OpenInApp, and blocks connections to it's paywall "link shorteners"
+!modified: 2025 March 6
 
-! openinapp.com
-||gstatic.com^$domain=openinapp.com
-||googletagmanager.com^$domain=openinapp.com
-||google.com^$domain=openinapp.com
-||cloudflareinsights.com^$domain=openinapp.com
-||ably.com^$domain=openinapp.com
-||openinapp.com/JS/gads.js^$domain=openinapp.com
-||openinapp.com/JS/conversion.js^$domain=openinapp.com
-||mixpanel.com^$domain=openinapp.com
-||googlesyndication.com^$domain=openinapp.com
-||scripts.openinapp.com/e763dbea-90a0-4a4a-8837-c3e88cfbdbd0.js^$domain=openinapp.com
+# openinapp.com
+@from, openinapp.com; => gstatic.com
+@from, openinapp.com; => googletagmanager.com
+@from, openinapp.com; => google.com
+@from, openinapp.com; => cloudflareinsights.com
+@from, openinapp.com; => ably.com
+@from, openinapp.com; => openinapp.com/JS/gads.js
+@from, openinapp.com; => openinapp.com/JS/conversion.js
+@from, openinapp.com; => mixpanel.com
+@from, openinapp.com; => googlesyndication.com
+@from, openinapp.com; => scripts.openinapp.com/e763dbea-90a0-4a4a-8837-c3e88cfbdbd0.js
 
-! oia.bio
-||google.com^$domain=oia.bio
-||gstatic.com^$domain=oia.bio
-||googletagmanager.com^$domain=oia.bio
-||facebook.com^$domain=oia.bio
-||facebook.net^$domain=oia.bio
-||topsecret.link^$domain=oia.bio
-||openinapp.com^$domain=oia.bio
-||api.openinapp.com^$domain=oia.bio
-||nodeapi.openinapp.com^$domain=oia.bio
-||cloudflareinsights.com^$domain=oia.bio
-||ably.com^$domain=oia.bio
-||mixpanel.com^$domain=oia.bio
+# oia.bio
+@from, oia.bio; => google.com
+@from, oia.bio; => gstatic.com
+@from, oia.bio; => googletagmanager.com
+@from, oia.bio; => facebook.com
+@from, oia.bio; => facebook.net
+@from, oia.bio; => topsecret.link
+@from, oia.bio; => openinapp.com
+@from, oia.bio; => api.openinapp.com
+@from, oia.bio; => nodeapi.openinapp.com
+@from, oia.bio; => cloudflareinsights.com
+@from, oia.bio; => ably.com
+@from, oia.bio; => mixpanel.com
 
-! topsecret.link: annoying pay-to-continue link shortener
-||topsecret.link^
-||topsecret.link^$document
-||topsecret.link^$all
-||google.com^$domain=topsecret.link
-||gstatic.com^$domain=topsecret.link
-||googletagmanager.com^$domain=topsecret.link
-||facebook.com^$domain=topsecret.link
-||facebook.net^$domain=topsecret.link
-||topsecret.link^$domain=topsecret.link
-||openinapp.com^$domain=topsecret.link
-||api.openinapp.com^$domain=topsecret.link
-||nodeapi.openinapp.com^$domain=topsecret.link
-||cloudflareinsights.com^$domain=topsecret.link
-||ably.com^$domain=topsecret.link
-||mixpanel.com^$domain=topsecret.link
+# topsecret.link - annoying pay-to-continue link shortener
+@domain, topsecret.link
+@from, oia.bio; => google.com
+@from, oia.bio; => gstatic.com
+@from, oia.bio; => googletagmanager.com
+@from, oia.bio; => facebook.com
+@from, oia.bio; => facebook.net
+@from, oia.bio; => topsecret.link
+@from, oia.bio; => openinapp.com
+@from, oia.bio; => api.openinapp.com
+@from, oia.bio; => nodeapi.openinapp.com
+@from, oia.bio; => cloudflareinsights.com
+@from, oia.bio; => ably.com
+@from, oia.bio; => mixpanel.com

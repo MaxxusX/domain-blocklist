@@ -1,21 +1,13 @@
-[Adblock Plus 3.13]
-! Title: Clean Twitter
-! Description: Removes annoyances and simplifies the interface of Twitter. also removes tracking data
-! Last modified: 2025 March 6
-! Expires: 14 days
-! Homepage: https://github.com/maxxusx/domain-blocklist
+!title:    Clean Twitter
+!desc:     Removes annoyances and simplifies the interface of Twitter. also removes tracking data
+!modified: 2025 March 6
 
 # remove tracking data
-!#if ext_ublock
-twitter.com,x.com##+js(set-session-storage-item, attribution, $remove$)
-!#endif
-!#if adguard
-twitter.com,x.com#%#//scriptlet('set-session-storage-item', 'attribution', '$remove$')
-!#endif
+@scriptlet, twitter.com, x.com; remove-session-storage-item, attribution
 
 # remove annoying grok buttons
-twitter.com,x.com##body > div#react-root > div > div > div#layers > div > div:has(> div > div[data-testid="GrokDrawer"])
-twitter.com,x.com##body > div#react-root > div > div > div[data-at-shortcutkeys] > header[role="banner"] > div > div > div > div > div > nav[role="navigation"] > a[href="/i/grok"]
-twitter.com,x.com##body > div#react-root > div > div > div[data-at-shortcutkeys] > header[role="banner"] > div > div > div > div > div > nav[role="navigation"] > a[href="/i/premium_sign_up"]
-twitter.com,x.com##body > div#react-root > div > div > div[data-at-shortcutkeys] > header[role="banner"] > div > div > div > div > div > nav[role="navigation"] > a[href="/i/verified-orgs-signup"]
-twitter.com,x.com##article[data-testid="tweet"] div:has(> button[aria-label="Grok actions"])
+@cosmetic, twitter.com, x.com; body > div#react-root > div > div > div#layers > div > div:has(> div > div[data-testid="GrokDrawer"])
+@cosmetic, twitter.com, x.com; body > div#react-root > div > div > div[data-at-shortcutkeys] > header[role="banner"] > div > div > div > div > div > nav[role="navigation"] > a[href="/i/grok"]
+@cosmetic, twitter.com, x.com; body > div#react-root > div > div > div[data-at-shortcutkeys] > header[role="banner"] > div > div > div > div > div > nav[role="navigation"] > a[href="/i/premium_sign_up"]
+@cosmetic, twitter.com, x.com; body > div#react-root > div > div > div[data-at-shortcutkeys] > header[role="banner"] > div > div > div > div > div > nav[role="navigation"] > a[href="/i/verified-orgs-signup"]
+@cosmetic, twitter.com, x.com; article[data-testid="tweet"] div:has(> button[aria-label="Grok actions"])

@@ -1,30 +1,21 @@
-[Adblock Plus 3.13]
-! Title: Clean Merriam-Webster
-! Description: Removes annoyances and simplifies the interface of Merriam-Webster
-! Last modified: 2025 March 6
-! Expires: 14 days
-! Homepage: https://github.com/maxxusx/domain-blocklist
+!title:    Clean Merriam-Webster
+!desc:     Removes annoyances and simplifies the interface of Merriam-Webster
+!modified: 2025 March 8
 
-merriam-webster.com###main-banner-ad-container
-merriam-webster.com###definition-right-rail
-merriam-webster.com###base-header > nav > div.navigation-container
-merriam-webster.com###examples
-merriam-webster.com###word-history
-merriam-webster.com###related-phrases
-merriam-webster.com###related-articles
-merriam-webster.com###nearby-entries
-merriam-webster.com###citations
-merriam-webster.com###social-links
-merriam-webster.com###subscribe-unabridged
-merriam-webster.com##.main-container > .additional-content-area
-merriam-webster.com##.global-footer > .footer-mast > .mw-logo-section
-merriam-webster.com##.global-footer > .footer-mast > .footer-mast-content > .footer-subscribe-block
-merriam-webster.com##.global-footer > .footer-mast > .footer-mast-content > .follow-us
+@cosmetic, merriam-webster.com; #main-banner-ad-container
+@cosmetic, merriam-webster.com; #definition-right-rail
+@cosmetic, merriam-webster.com; #base-header > nav > div.navigation-container
+@cosmetic, merriam-webster.com; #examples
+@cosmetic, merriam-webster.com; #word-history
+@cosmetic, merriam-webster.com; #related-phrases
+@cosmetic, merriam-webster.com; #related-articles
+@cosmetic, merriam-webster.com; #nearby-entries
+@cosmetic, merriam-webster.com; #citations
+@cosmetic, merriam-webster.com; #social-links
+@cosmetic, merriam-webster.com; #subscribe-unabridged
+@cosmetic, merriam-webster.com; .main-container > .additional-content-area
+@cosmetic, merriam-webster.com; .global-footer > .footer-mast > .mw-logo-section
+@cosmetic, merriam-webster.com; .global-footer > .footer-mast > .footer-mast-content > .footer-subscribe-block
+@cosmetic, merriam-webster.com; .global-footer > .footer-mast > .footer-mast-content > .follow-us
 
-!#if ext_ublock
-merriam-webster.com##.global-footer > .footer-foot:style(min-height: auto !important;)
-!#endif
-
-!#if adguard
-merriam-webster.com#$#.global-footer > .footer-foot { min-height: auto !important; }
-!#endif
+@restyle,  merriam-webster.com; .global-footer > .footer-foot ;=> { min-height: auto !important; }

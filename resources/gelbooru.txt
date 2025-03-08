@@ -1,42 +1,33 @@
-[Adblock Plus 3.13]
-! Title: Gelbooru Filter
-! Description: Removes ads, auto-enables dark mode, and auto-enables "Show All Site Content" on Gelbooru
-! Last modified: 2025 March 6
-! Expires: 14 days
-! Homepage: https://github.com/maxxusx/domain-blocklist
+!title:    Gelbooru Filter
+!desc:     Removes ads, auto-enables dark mode, and auto-enables "Show All Site Content" on Gelbooru
+!modified: 2025 March 6
 
 # turn on dark mode and "Show All Site Content"
-!#if ext_ublock
-gelbooru.com##+js(trusted-set-cookie, dark_mode, kthx)
-gelbooru.com##+js(trusted-set-cookie, fringeBenefits, yup)
-!#endif
-!#if adguard
-gelbooru.com#%#//scriptlet('trusted-set-cookie', 'dark_mode', 'kthx')
-gelbooru.com#%#//scriptlet('trusted-set-cookie', 'fringeBenefits', 'yup')
-!#endif
+@scriptlet, gelbooru.com; set-cookie, dark_mode, kthx
+@scriptlet, gelbooru.com; set-cookie, fringeBenefits, yup
 
-*$3p,from=gelbooru.com
-@@||ajax.googleapis.com/ajax/libs/jquery^$from=gelbooru.com
+@from,   gelbooru.com; => third-party
+~from,   gelbooru.com; => ajax.googleapis.com/ajax/libs/jquery
 
 # ad-serving domains
-||realsrv.com^$from=gelbooru.com
-||isolatedovercomepasted.com^
-||bankingbloatedcaptive.com^
-||divisiondrearilyunfiled.com^
-||diagramjawlineunhappy.com^
+@from,   gelbooru.com; => realsrv.com
+@domain, isolatedovercomepasted.com
+@domain, bankingbloatedcaptive.com
+@domain, divisiondrearilyunfiled.com
+@domain, diagramjawlineunhappy.com
 
 # probably ad-serving domains
-||lookmommynohands.com^
-||dinvziwfia.com^
-||ohgqwicco.com^
-||mnaspm.com^
+@domain, lookmommynohands.com
+@domain, dinvziwfia.com
+@domain, ohgqwicco.com
+@domain, mnaspm.com
 
 # actually hide the ads
-gelbooru.com##body > div#container > main > div.mainBodyPadding > div:has(> script[src*="isolatedovercomepasted.com"])
-gelbooru.com##body > div#container > main > div.mainBodyPadding > div:has(> script[src*="bankingbloatedcaptive.com"])
-gelbooru.com##body > div#container > main > div.mainBodyPadding > div:has(> script[src*="divisiondrearilyunfiled.com"])
-gelbooru.com##body > div#container > main > div.mainBodyPadding > div:has(> script[src*="diagramjawlineunhappy.com"])
-gelbooru.com##body > div#container > main > div.mainBodyPadding > div:has(> iframe)
-gelbooru.com##body > div#container > main > div.headerAd
-gelbooru.com##body > div#container > main > div.footerAd
-gelbooru.com##body > div#container > main > div.footerAd2
+@cosmetic, gelbooru.com; body > div#container > main > div.mainBodyPadding > div:has(> script[src*="isolatedovercomepasted.com"])
+@cosmetic, gelbooru.com; body > div#container > main > div.mainBodyPadding > div:has(> script[src*="bankingbloatedcaptive.com"])
+@cosmetic, gelbooru.com; body > div#container > main > div.mainBodyPadding > div:has(> script[src*="divisiondrearilyunfiled.com"])
+@cosmetic, gelbooru.com; body > div#container > main > div.mainBodyPadding > div:has(> script[src*="diagramjawlineunhappy.com"])
+@cosmetic, gelbooru.com; body > div#container > main > div.mainBodyPadding > div:has(> iframe)
+@cosmetic, gelbooru.com; body > div#container > main > div.headerAd
+@cosmetic, gelbooru.com; body > div#container > main > div.footerAd
+@cosmetic, gelbooru.com; body > div#container > main > div.footerAd2

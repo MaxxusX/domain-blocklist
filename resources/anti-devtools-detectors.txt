@@ -1,0 +1,106 @@
+!title:    Anti Devtools Detectors
+!desc:     Blocks those annoying and pointless devtools detectors
+!modified: 2025 March 6
+
+# https://www.npmjs.com/package/devtools-detector
+@url-path, /node_modules/devtools-detector
+@url,      cdnjs.cloudflare.com/ajax/libs/devtools-detector
+@url,      unpkg.com/devtools-detector
+@url-glob, unpkg.com/devtools-detector@*
+@url,      cdn.jsdelivr.net/npm/devtools-detector
+@url-glob, cdn.jsdelivr.net/npm/devtools-detector@*
+@url,      cdn.jsdelivr.net/gh/AEPKILL/devtools-detector
+@url-glob, cdn.jsdelivr.net/gh/AEPKILL/devtools-detector@*
+
+# https://www.npmjs.com/package/devtools-detecter
+@url-path, /node_modules/devtools-detecter
+@url,      unpkg.com/devtools-detecter
+@url-glob, unpkg.com/devtools-detecter@*
+@url,      cdn.jsdelivr.net/npm/devtools-detecter
+@url-glob, cdn.jsdelivr.net/npm/devtools-detecter@*
+@url,      cdn.jsdelivr.net/gh/MHuiG/devtools-detecter
+@url-glob, cdn.jsdelivr.net/gh/MHuiG/devtools-detecter@*
+
+# https://www.npmjs.com/package/devtools-detect
+@url-path, /node_modules/devtools-detect
+@url,      unpkg.com/devtools-detect
+@url-glob, unpkg.com/devtools-detect@*
+@url,      cdn.jsdelivr.net/npm/devtools-detect
+@url-glob, cdn.jsdelivr.net/npm/devtools-detect@*
+@url,      cdn.jsdelivr.net/gh/sindresorhus/devtools-detect
+@url-glob, cdn.jsdelivr.net/gh/sindresorhus/devtools-detect@*
+
+# https://www.npmjs.com/package/devtools-detector-pro
+@url-path, /node_modules/devtools-detector-pro
+@url,      unpkg.com/devtools-detector-pro
+@url-glob, unpkg.com/devtools-detector-pro@*
+@url,      cdn.jsdelivr.net/npm/devtools-detector-pro
+@url-glob, cdn.jsdelivr.net/npm/devtools-detector-pro@*
+@url,      cdn.jsdelivr.net/gh/suplo-dev/devtools-detector
+@url-glob, cdn.jsdelivr.net/gh/suplo-dev/devtools-detector@*
+
+# https://www.npmjs.com/package/devtools-detector-fix
+@url-path, /node_modules/devtools-detector-fix
+@url,      unpkg.com/devtools-detector-fix
+@url-glob, unpkg.com/devtools-detector-fix@*
+@url,      cdn.jsdelivr.net/npm/devtools-detector-fix
+@url-glob, cdn.jsdelivr.net/npm/devtools-detector-fix@*
+
+# https://www.npmjs.com/package/devtools-detector-fork
+@url-path, /node_modules/devtools-detector-fork
+@url,      unpkg.com/devtools-detector-fork
+@url-glob, unpkg.com/devtools-detector-fork@*
+@url,      cdn.jsdelivr.net/npm/devtools-detector-fork
+@url-glob, cdn.jsdelivr.net/npm/devtools-detector-fork@*
+
+# https://www.npmjs.com/package/@leventeszucs/devtools-detect
+@url-path, /node_modules/@leventeszucs/devtools-detect
+@url,      unpkg.com/@leventeszucs/devtools-detect
+@url-glob, unpkg.com/@leventeszucs/devtools-detect@*
+@url,      cdn.jsdelivr.net/npm/@leventeszucs/devtools-detect
+@url-glob, cdn.jsdelivr.net/npm/@leventeszucs/devtools-detect@*
+@url,      cdn.jsdelivr.net/gh/lvntszcs/devtools-detector
+@url-glob, cdn.jsdelivr.net/gh/lvntszcs/devtools-detector@*
+
+# https://www.npmjs.com/package/devtools-detector-csp
+@url-path, /node_modules/devtools-detector-csp
+@url,      unpkg.com/devtools-detector-csp
+@url-glob, unpkg.com/devtools-detector-csp@*
+@url,      cdn.jsdelivr.net/npm/devtools-detector-csp
+@url-glob, cdn.jsdelivr.net/npm/devtools-detector-csp@*
+@url,      cdn.jsdelivr.net/gh/Vasanthvivi/devtools-detector
+@url-glob, cdn.jsdelivr.net/gh/Vasanthvivi/devtools-detector@*
+
+# https://www.npmjs.com/package/@innei/devtools-detector
+@url-path, /node_modules/@innei/devtools-detector
+@url,      unpkg.com/@innei/devtools-detector
+@url-glob, unpkg.com/@innei/devtools-detector@*
+@url,      cdn.jsdelivr.net/npm/@innei/devtools-detector
+@url-glob, cdn.jsdelivr.net/npm/@innei/devtools-detector@*
+@url,      cdn.jsdelivr.net/gh/Innei/devtools-detector
+@url-glob, cdn.jsdelivr.net/gh/Innei/devtools-detector@*
+
+# https://www.npmjs.com/package/disable-devtool
+@url-path, /node_modules/disable-devtool
+@url,      unpkg.com/disable-devtool
+@url-glob, unpkg.com/disable-devtool@*
+@url,      cdn.jsdelivr.net/npm/disable-devtool
+@url-glob, cdn.jsdelivr.net/npm/disable-devtool@*
+@url,      cdn.jsdelivr.net/gh/theajack/disable-devtool
+@url-glob, cdn.jsdelivr.net/gh/theajack/disable-devtool@*
+
+# https://www.npmjs.com/package/dinulec-disable-devtool
+@url-path, /node_modules/dinulec-disable-devtool
+@url,      unpkg.com/dinulec-disable-devtool
+@url-glob, unpkg.com/dinulec-disable-devtool@*
+@url,      cdn.jsdelivr.net/npm/dinulec-disable-devtool
+@url-glob, cdn.jsdelivr.net/npm/dinulec-disable-devtool@*
+@url,      cdn.jsdelivr.net/gitlab/grupa-mac-sa/dinulec-disable-devtool
+@url-glob, cdn.jsdelivr.net/gitlab/grupa-mac-sa/dinulec-disable-devtool@*
+
+# https://www.npmjs.com/package/@comptechco/disable-devtool
+@url-path, /node_modules/@comptechco/disable-devtool
+@url,      unpkg.com/@comptechco/disable-devtool
+@url-glob, unpkg.com/@comptechco/disable-devtool@*
+@url,      cdn.jsdelivr.net/npm/@comptechco/disable-devtool
+@url-glob, cdn.jsdelivr.net/npm/@comptechco/disable-devtool@*

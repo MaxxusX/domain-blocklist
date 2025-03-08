@@ -1,11 +1,3 @@
-# TODO: check if the following should be whitelisted aswell (already removed from main file)
-# * expresswifi.com
-# * crowdtangle.com
-# * redkix.com
-# * workplace.com
-# * workplaceusecases.com
-# * facebookflow.com
-
 flow.org
 flow.dev
 flowtype.org

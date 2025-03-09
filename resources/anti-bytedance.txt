@@ -1,3 +1,7 @@
+!title:    Anti-Bytedance
+!desc:     Blocks all domains owned by Bytedance (TikTok)
+!modified: 2025 March 8
+
 365yg.com
 99uri.cn
 99uri.com

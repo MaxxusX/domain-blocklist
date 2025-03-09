@@ -1,6 +1,6 @@
 !title:    Gelbooru Filter
 !desc:     Removes ads, auto-enables dark mode, and auto-enables "Show All Site Content" on Gelbooru
-!modified: 2025 March 6
+!modified: 2025 March 8
 
 # turn on dark mode and "Show All Site Content"
 @scriptlet, gelbooru.com; set-cookie, dark_mode, kthx

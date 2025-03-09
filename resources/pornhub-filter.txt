@@ -1,0 +1,26 @@
+!title:    Pornhub Filter
+!desc:     Blocks ads, bypasses age gate, disables recommendations, and removes tracking cookies on Pornhub
+!modified: 2025 March 6
+
+# ad domain
+# this is generic cuz it's apparently used by a lot of other porn sites as well
+@domain, trafficjunky.com
+
+# fix age gate button
+~url, pornhub.com/_i?type=event&event=enter
+
+# disable recommendations
+@scriptlet, pornhub.com; set-cookie, hideRecommendations, 1
+
+# bypass age gate
+@scriptlet, pornhub.com; set-cookie, accessAgeDisclaimerPH, 1
+
+# remove tracking cookies
+@scriptlet, pornhub.com; remove-cookie, ss
+@scriptlet, pornhub.com; remove-cookie, bs
+@scriptlet, pornhub.com; remove-cookie, comp_detect-cookies
+@scriptlet, pornhub.com; remove-cookie, platform
+@scriptlet, pornhub.com; remove-cookie, sessid
+@scriptlet, pornhub.com; remove-cookie, ua
+@scriptlet, pornhub.com; remove-cookie, __l
+@scriptlet, pornhub.com; remove-cookie, __s

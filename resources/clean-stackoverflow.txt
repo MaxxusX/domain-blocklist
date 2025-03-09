@@ -1,6 +1,6 @@
 !title:    Clean StackOverflow
 !desc:     Removes annoyances and simplifies the interface of StackOverflow
-!modified: 2025 March 6
+!modified: 2025 March 8
 
 # general
 @cosmetic, stackoverflow.com; body > header

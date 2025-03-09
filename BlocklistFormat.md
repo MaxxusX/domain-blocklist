@@ -19,80 +19,80 @@ Lines starting with `~` are unblocked resources. They MUST be immediately follow
 
 ## Data Types
 
-### <Domain>
+### `<Domain>`
 A domain.
 #### Syntax
 ```
 example.com
 ```
 
-### <GlobDomain>
+### `<GlobDomain>`
 Same as `<Domain>` but allows globs.
 #### Syntax
 ```
 example*.com
 ```
 
-### <DomainList>
+### `<DomainList>`
 A comma-separated list of domains.
 #### Syntax
 ```
 <Domain>[, <Domain>, [...]]
 ```
 
-### <GlobDomainList>
+### `<GlobDomainList>`
 Same as `<DomainList>` but allows globs.
 #### Syntax
 ```
 <GlobDomain>[, <GlobDomain>, [...]]
 ```
 
-### <Path>
+### `<Path>`
 A path on any domain, not including the domain part.
 #### Syntax
 ```
 /valid/path
 ```
 
-### <GlobPath>
+### `<GlobPath>`
 Same as `<Path>`, but allows globs.
 #### Syntax
 ```
 /*/valid/path
 ```
 
-### <URL>
+### `<URL>`
 A full URL, excluding the scheme.
 #### Syntax
 ```
 <Domain><Path><searchquery>
 ```
 
-### <GlobURL>
+### `<GlobURL>`
 Same as `<URL>`, but allows globs.
 #### Syntax
 ```
 <GlobDomain><GlobPath><glob-searchquery>
 ```
 
-### <CSSSelector>
+### `<CSSSelector>`
 A CSS selector.
 #### Syntax
 See MDN Web Docs
 
-### <CSSStyleList>
+### `<CSSStyleList>`
 A list of CSS styles.
 #### Syntax
 See MDN Web Docs
 
-### <ResourceType>
+### `<ResourceType>`
 Type of resource/request
 #### Syntax
 ```
 first-party || third-party || *
 ```
 
-### <Scriptlet>
+### `<Scriptlet>`
 Same as `<URL>`, but allows globs.
 #### Supported Scriptlets
 ```

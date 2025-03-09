@@ -86,14 +86,14 @@ A list of CSS styles.
 See [CSS Reference on MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
 ### `<ResourceType>`
-Type of resource/request
+The type of resource/request
 #### Syntax
 ```
 first-party || third-party || *
 ```
 
 ### `<Scriptlet>`
-Same as `<URL>`, but allows globs.
+A predefined JS script
 #### Supported Scriptlets
 ```
 set-cookie, <cookie-name>, <new-value>

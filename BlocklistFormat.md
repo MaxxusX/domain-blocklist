@@ -118,10 +118,10 @@ eg. `@domain, example.com` blocks `example.com` and `www.example.com`
 
 ### domain-glob
 Same as `domain`, but allows globs.
-eg. `@domain, example*.com` blocks `example.com` and `example123.com`
+eg. `@domain-glob, example*.com` blocks `example.com` and `example123.com`
 #### Syntax
 ```
-@domain, <GlobDomains>
+@domain-glob, <GlobDomains>
 ```
 
 ### path
@@ -137,7 +137,7 @@ Same as `path`, but allows globs.
 eg. `@path-glob, /*/ads` blocks `example.com/en-US/ads`
 #### Syntax
 ```
-@path, <GlobPath>
+@path-glob, <GlobPath>
 ```
 
 ### url
@@ -150,19 +150,19 @@ eg. `@url, example.com/stuff/ads` blocks `example.com/stuff/ads` and `example.co
 
 ### url-glob
 Same as `url`, but allows globs.
-eg. `@url, example.com/*/ads` blocks `example.com/stuff/ads`
+eg. `@url-glob, example.com/*/ads` blocks `example.com/stuff/ads`
 #### Syntax
 ```
-@url, <GlobURL>
+@url-glob, <GlobURL>
 ```
 
 <!-- TODO
 ### url-regex
 Same as `url`, but allows regex.
-eg. `@url, /^example.com/ad.(?:png|jpeg)$/` blocks `example.com/ad.png` and `example.com/ad.jpeg`
+eg. `@url-regex, /^example.com/ad.(?:png|jpeg)$/` blocks `example.com/ad.png` and `example.com/ad.jpeg`
 #### Syntax
 ```
-@url, /regex/
+@url-regex, /regex/
 ```
 -->
 

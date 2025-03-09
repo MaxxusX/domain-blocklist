@@ -78,12 +78,12 @@ Same as `<URL>`, but allows globs.
 ### `<CSSSelector>`
 A CSS selector.
 #### Syntax
-See MDN Web Docs
+See [CSS Reference - Selectors on MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#selectors)
 
 ### `<CSSStyleList>`
 A list of CSS styles.
 #### Syntax
-See MDN Web Docs
+See [CSS Reference on MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
 ### `<ResourceType>`
 Type of resource/request

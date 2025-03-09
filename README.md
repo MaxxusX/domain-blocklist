@@ -28,6 +28,7 @@ note to self: also include these lists:
 Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fake, Coins and other crap.
 > [!NOTE]
 > Minimal false positives and breakage.
+
 ### whitelist
  - securepubads.g.doubleclick.net
  - pubads.g.doubleclick.net
@@ -53,6 +54,7 @@ Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fa
 Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Free Hoster, Fake, Coins, Meta, and other crap.
 > [!WARNING]
 > This'll break things, so you'll need to whitelist stuff often.
+
 ### whitelist
 ### blacklist
 ### included blacklists
@@ -74,6 +76,7 @@ Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fr
 Very aggressively blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Free Hoster, Fake, Coins, NSFW, Meta, ByteDance, and other crap.
 > [!CAUTION]
 > This will DEFINITELY break things, and you'll need to whitelist stuff VERY often.
+
 ### whitelist
 ### blacklist
 ### included blacklists

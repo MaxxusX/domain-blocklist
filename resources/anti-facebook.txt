@@ -2,9 +2,13 @@
 !desc:     Blocks all domains owned by Facebook (Meta)
 !modified: 2025 March 8
 
+# onion site
+@domain, facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion
+
 # /cdn-cgi/pe/bag2 is CloudFlare's "Rocket Loader"
 @path-glob, /cdn-cgi/pe/bag2?*connect.facebook.com
 @path-glob, /cdn-cgi/pe/bag2?*connect.facebook.net
+
 @domain, expresswifi.com
 @domain, crowdtangle.com
 @domain, redkix.com

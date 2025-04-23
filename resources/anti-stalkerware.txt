@@ -1,3 +1,7 @@
+!title:    Anti-Stalkerware
+!desc:     Blocks domains associated with stalkerware. based on https://github.com/AssoEchap/stalkerware-indicators/blob/master/generated/quad9_blocklist.txt
+!modified: 2025 April 23
+
 11111.pl
 12d60.appspot.com
 12d60.firebaseio.com
@@ -12,7 +16,7 @@
 8916f.appspot.com
 89685.firebaseio.com
 a-spy.com
-a.syncvch.com
+syncvch.com
 a342f.appspot.com
 a71f4.firebaseio.com
 absolutesoftsystem.in

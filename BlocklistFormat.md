@@ -1,3 +1,4 @@
+<!--
 # Blocklist Format
 Lines MUST NOT contain more than one filter.
 
@@ -156,7 +157,6 @@ eg. `@url-glob, example.com/*/ads` blocks `example.com/stuff/ads`
 @url-glob, <GlobURL>
 ```
 
-<!-- TODO
 ### url-regex
 Same as `url`, but allows regex.
 eg. `@url-regex, /^example.com/ad.(?:png|jpeg)$/` blocks `example.com/ad.png` and `example.com/ad.jpeg`
@@ -164,7 +164,6 @@ eg. `@url-regex, /^example.com/ad.(?:png|jpeg)$/` blocks `example.com/ad.png` an
 ```
 @url-regex, /regex/
 ```
--->
 
 ### from
 Blocks a requests from a domain(s) and their subdomains to a certain resource type or URL and their sub-paths.
@@ -199,3 +198,4 @@ eg. `@scriptlet, example.com; set-cookie, no-track, true`
 ```
 @scriptlet, <DomainList>; <Scriptlet>[, <Scriptlet.Parameter1>[, <Scriptlet.Parameter2>, [...]]]
 ```
+-->

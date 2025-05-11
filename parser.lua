@@ -1,3 +1,5 @@
+-- TODO: replace with the new parser for the new blocklist format
+
 local function parseLine(line)
     local filter = line.trim()
 

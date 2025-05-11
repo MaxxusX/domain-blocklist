@@ -1,3 +1,5 @@
+**TODO:** replace with the new format & update lists to use it
+
 <!--
 # Blocklist Format
 Lines MUST NOT contain more than one filter.

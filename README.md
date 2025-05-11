@@ -1,29 +1,36 @@
 # maxxus' domain blocklist
 
+<!--
 **TODO:**
 * auto-build Normal, Extended, and Maximum, for 3 versions; domains, wildcard (`*.domain`), and ublock (`||domain^$all`)
 * also block high-risk site's (malware, resource stealer, etc.) web archive counterparts:
   * `||web.archive.org/web/*/*://example.com/`
   * `||web.archive.org/web/*/*://*.example.com/`
+-->
 
 ## No Meta/Facebook
 Blocks Meta/Facebook and all services owned by it.
 > [!CAUTION]
 > This breaks stuff!
 
+<!--
 note to self: also include these lists:
 * https://raw.githubusercontent.com/DandelionSprout/adfilt/refs/heads/master/Conversions%20of%20AdGuard%20Services%20lists/facebook.txt
 * https://raw.githubusercontent.com/nextdns/services/refs/heads/main/services/messenger
 * https://raw.githubusercontent.com/DandelionSprout/adfilt/refs/heads/master/Conversions%20of%20AdGuard%20Services%20lists/whatsapp.txt
+-->
 
 ## No ByteDance/TikTok
 Blocks ByteDance and all services owned by it (eg. TikTok)
 
+<!--
 note to self: also include these lists:
 * https://raw.githubusercontent.com/DandelionSprout/adfilt/refs/heads/master/Conversions%20of%20AdGuard%20Services%20lists/tiktok.txt
 * https://raw.githubusercontent.com/nextdns/services/refs/heads/main/services/tiktok
 * https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/native.tiktok.extended-onlydomains.txt
+-->
 
+<!--
 ## NORMAL
 Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fake, Coins and other crap.
 > [!NOTE]
@@ -98,3 +105,4 @@ Very aggressively blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing,
  - [HaGeZi Native Tracker - Oppo/Realme](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/native.oppo-realme-onlydomains.txt)
  - [HaGeZi Native Tracker - Xiaomi](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/native.xiaomi-onlydomains.txt)
  - [HaGeZi Native Tracker - TikTok (Aggressive)](https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/native.tiktok.extended-onlydomains.txt)
+-->

@@ -1,0 +1,21 @@
+[uBlock Origin]
+! Title: Clean Twitter
+! Description: Removes annoyances and simplifies the interface of Twitter. also removes tracking data and opts out.
+! Updated: 29 July 2025
+! Expires: 2 days
+! Homepage: https://github.com/MaxxusX/domain-blocklist/
+
+# Digital Advertising Alliance opt-out
+x.com##+js(set-cookie, daa, 1)
+
+# remove tracking data
+x.com##+js(remove-session-storage-item, attribution)
+
+# remove annoying grok buttons
+x.com###layers > div:first-child
+x.com##div[data-testid="primaryColumn"] div[data-testid="cellInnerDiv"]:has([data-testid="placementTracking"])
+x.com###layers > div > div:has(> div > div[data-testid="GrokDrawer"])
+x.com###react-root div[data-at-shortcutkeys] > header[role="banner"] > nav[role="navigation"] > a[href="/i/grok"]
+x.com###react-root div[data-at-shortcutkeys] > header[role="banner"] > nav[role="navigation"] > a[href="/i/premium_sign_up"]
+x.com###react-root div[data-at-shortcutkeys] > header[role="banner"] > nav[role="navigation"] > a[href="/i/verified-orgs-signup"]
+x.com##article[data-testid="tweet"] div:has(> button[aria-label="Grok actions"])

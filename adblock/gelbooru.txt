@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: Gelbooru Filter
 ! Description: Removes ads, auto-enables dark mode, and auto-enables "Show All Site Content" on Gelbooru
-! Updated: 28 July 2025
+! Updated: 29 July 2025
 ! Expires: 2 days
 ! Homepage: https://github.com/MaxxusX/domain-blocklist/
 
@@ -32,3 +32,18 @@ gelbooru.com###container > main > div.mainBodyPadding > div:has(> iframe)
 gelbooru.com###container > main > div.headerAd
 gelbooru.com###container > main > div.footerAd
 gelbooru.com###container > main > div.footerAd2
+
+# these are secretly analytics or ads or something, i forgor
+||gelbooru.com/script/application3.js^
+||gelbooru.com//script/application3.js^
+||gelbooru.com/autoDebug.js^
+||gelbooru.com//autoDebug.js^
+||gelbooru.com/script/license.30.js^
+||gelbooru.com//script/license.30.js^
+
+# hide beastiality (idk why this is even allowed)
+gelbooru.com###container > main > div.thumbnail-container > article.thumbnail-preview:has(img[title~="bestiality"])
+gelbooru.com###container > main > div.mainBodyPadding > div.commentThumbnail:has(img[title~="bestiality"])
+gelbooru.com###container > main > div.mainBodyPadding > div.commentThumbnail:has(img[title~="bestiality"]) + div.commentHeader
+gelbooru.com###container > main > div.mainBodyPadding > section.image-container[data-tags*="bestiality"]
+gelbooru.com##html:has(> head > meta[name="keywords"][content*=", bestiality"]) #gelcomVideoPlayer

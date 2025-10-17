@@ -1,8 +1,8 @@
 [uBlock Origin]
 ! Title: Clean Twitter
 ! Description: Removes annoyances and simplifies the interface of Twitter. also removes tracking data and opts out.
-! Updated: 29 July 2025
-! Expires: 2 days
+! Updated: 16 October 2025
+! Expires: 7 days
 ! Homepage: https://github.com/MaxxusX/domain-blocklist/
 
 # Digital Advertising Alliance opt-out

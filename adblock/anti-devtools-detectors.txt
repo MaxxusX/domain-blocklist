@@ -1,8 +1,8 @@
 [uBlock Origin]
 ! Title: Anti Devtools Detectors
 ! Description: Blocks those annoying and pointless devtools detectors
-! Updated: 2025 March 8
-! Expires: 2 days
+! Updated: 2025 October 16
+! Expires: 7 days
 ! Homepage: https://github.com/MaxxusX/domain-blocklist/
 
 # https://www.npmjs.com/package/devtools-detector

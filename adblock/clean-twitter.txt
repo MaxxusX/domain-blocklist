@@ -19,3 +19,5 @@ x.com###react-root div[data-at-shortcutkeys] > header[role="banner"] > nav[role=
 x.com###react-root div[data-at-shortcutkeys] > header[role="banner"] > nav[role="navigation"] > a[href="/i/premium_sign_up"]
 x.com###react-root div[data-at-shortcutkeys] > header[role="banner"] > nav[role="navigation"] > a[href="/i/verified-orgs-signup"]
 x.com##article[data-testid="tweet"] div:has(> button[aria-label="Grok actions"])
+x.com##[aria-label="Primary"][role="navigation"] > a[aria-label="Grok"][role="link"]
+x.com##[aria-label="Primary"][role="navigation"] > a[aria-label="Premium"][role="link"]

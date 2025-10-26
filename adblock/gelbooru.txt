@@ -1,13 +1,9 @@
 [uBlock Origin]
-! Title: Gelbooru Filter
-! Description: Removes ads, auto-enables dark mode, and auto-enables "Show All Site Content" on Gelbooru
-! Updated: 29 July 2025
-! Expires: 2 days
+! Title: Clean Gelbooru
+! Description: Removes ads, annoyances, and hides beastiality on Gelbooru
+! Updated: 26 Oct 2025
+! Expires: 7 days
 ! Homepage: https://github.com/MaxxusX/domain-blocklist/
-
-# turn on dark mode and "Show All Site Content"
-gelbooru.com##+js(trusted-set-cookie, dark_mode, "kthx")
-gelbooru.com##+js(trusted-set-cookie, fringeBenefits, "yup")
 
 # lets just block all 3p domains
 *$3p,from=gelbooru.com
@@ -20,6 +16,7 @@ gelbooru.com##+js(trusted-set-cookie, fringeBenefits, "yup")
 ||bankingbloatedcaptive.com^
 ||divisiondrearilyunfiled.com^
 ||diagramjawlineunhappy.com^
+||boxypluckunrelated.com^
 ||lookmommynohands.com^
 ||dinvziwfia.com^
 ||ohgqwicco.com^
@@ -27,6 +24,7 @@ gelbooru.com##+js(trusted-set-cookie, fringeBenefits, "yup")
 ||mnaspm.com^
 
 # actually hide the ads
+gelbooru.com###container > main > div.mainBodyPadding > div:has(> a:has-text("AI Jerk Off"))
 gelbooru.com###container > main > div.mainBodyPadding > div:has(> script[src])
 gelbooru.com###container > main > div.mainBodyPadding > div:has(> iframe)
 gelbooru.com###container > main > div.headerAd
@@ -41,9 +39,16 @@ gelbooru.com###container > main > div.footerAd2
 ||gelbooru.com/script/license.30.js^
 ||gelbooru.com//script/license.30.js^
 
+# annoying banner
+gelbooru.com###motd:has-text("We will show one popunder ad per half day.")
+
 # hide beastiality (idk why this is even allowed)
-gelbooru.com###container > main > div.thumbnail-container > article.thumbnail-preview:has(img[title~="bestiality"])
-gelbooru.com###container > main > div.mainBodyPadding > div.commentThumbnail:has(img[title~="bestiality"])
-gelbooru.com###container > main > div.mainBodyPadding > div.commentThumbnail:has(img[title~="bestiality"]) + div.commentHeader
-gelbooru.com###container > main > div.mainBodyPadding > section.image-container[data-tags*="bestiality"]
-gelbooru.com##html:has(> head > meta[name="keywords"][content*=", bestiality"]) #gelcomVideoPlayer
+gelbooru.com###container > main > div.thumbnail-container > article:has(img[title~="bestiality"])
+#gelbooru.com###container > main > div.mainBodyPadding > section.image-container[data-tags~="bestiality"]
+# tag suggestion bar
+gelbooru.com###ui-id-1 > li:has-text("bestiality")
+gelbooru.com###ui-id-1 > li:has-text("beastiality")
+
+# let gelbooru support small creators!
+@@||gelbooru.com/extras^
+#gelbooru.com#@##container > main > div.mainBodyPadding > a:has(> img[src^="https://gelbooru.com/extras/"])

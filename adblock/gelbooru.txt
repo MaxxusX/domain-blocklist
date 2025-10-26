@@ -51,4 +51,4 @@ gelbooru.com###ui-id-1 > li:has-text("beastiality")
 
 # let gelbooru support small creators!
 @@||gelbooru.com/extras^
-#gelbooru.com#@##container > main > div.mainBodyPadding > a:has(> img[src^="https://gelbooru.com/extras/"])
+gelbooru.com#@##container > main > div.mainBodyPadding > a:has(> img[src^="https://gelbooru.com/extras/"])

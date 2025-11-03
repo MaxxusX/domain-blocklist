@@ -1,17 +1,19 @@
 [uBlock Origin]
 ! Title: Clean Gelbooru
 ! Description: Removes ads, annoyances, and hides beastiality on Gelbooru
-! Updated: 26 Oct 2025
+! Updated: 2 Nov 2025
 ! Expires: 7 days
 ! Homepage: https://github.com/MaxxusX/domain-blocklist/
 
 # lets just block all 3p domains
-*$3p,from=gelbooru.com
-@@||ajax.googleapis.com/ajax/libs/jquery^$from=gelbooru.com
+*$3p,domain=gelbooru.com
+*$subdocument,domain=gelbooru.com
+@@||ajax.googleapis.com/ajax/libs/jquery^$domain=gelbooru.com
 
 # ad-serving domains
 ||realsrv.com^
 ||magsrv.com^
+||tsyndicate.com^
 ||isolatedovercomepasted.com^
 ||bankingbloatedcaptive.com^
 ||divisiondrearilyunfiled.com^
@@ -22,11 +24,15 @@
 ||ohgqwicco.com^
 ||orcpfawzuvfe.com^
 ||mnaspm.com^
+||ku34bh9la09.com^
+||ourdreamstaticpages.pages.dev^
 
 # actually hide the ads
+gelbooru.com###container > main > div.mainBodyPadding > div:first-child:has(> a)
 gelbooru.com###container > main > div.mainBodyPadding > div:has(> a:has-text("AI Jerk Off"))
 gelbooru.com###container > main > div.mainBodyPadding > div:has(> script[src])
 gelbooru.com###container > main > div.mainBodyPadding > div:has(> iframe)
+gelbooru.com###container > main > div.mainBodyPadding > center:has(> div > iframe)
 gelbooru.com###container > main > div.headerAd
 gelbooru.com###container > main > div.footerAd
 gelbooru.com###container > main > div.footerAd2

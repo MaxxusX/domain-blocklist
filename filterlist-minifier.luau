@@ -1,4 +1,5 @@
 --!strict
+--!optimize 2
 
 local process = require("@lune/process")
 local fs = require("@lune/fs")

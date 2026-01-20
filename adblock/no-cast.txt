@@ -1,0 +1,26 @@
+[uBlock Origin]
+! Title: No Cast
+! Description: Blocks screencast/airplay scrips and buttons.
+! Updated: 2026 January 20
+! Expires: 14 days
+! Homepage: https://github.com/MaxxusX/domain-blocklist/
+
+! YouTube
+||gstatic.com/cast^$important
+||gstatic.com/eureka/clank/cast_sender.js^$script,important
+||gstatic.com/eureka/clank/*/cast_sender.js^$script,important
+||gstatic.com/cv/js/sender/*/cast_sender.js^$script,important
+||youtube-nocookie.com/s/player/*/remote.js^$script,important
+||youtube.com/s/player/*/remote.js^$script,important
+||youtube-nocookie.com/client_streamz^$important
+||youtube.com/client_streamz^$important
+||youtube-nocookie.com/pairing^$important
+||youtube.com/pairing^$important
+||youtube-nocookie.com/api/lounge^$important
+||youtube.com/api/lounge^$important
+||youtube-nocookie.com/api/loungedev^$important
+||youtube.com/api/loungedev^$important
+www.youtube.com##button.ytp-remote-button
+www.youtube.com##button.ytp-airplay-button
+www.youtube-nocookie.com##button.ytp-remote-button
+www.youtube-nocookie.com##button.ytp-airplay-button

@@ -1,8 +1,8 @@
 [uBlock Origin]
 ! Title: Clean Gelbooru
 ! Description: Removes ads, annoyances, and hides beastiality on Gelbooru
-! Updated: 2 Nov 2025
-! Expires: 7 days
+! Updated: 2026 January 20
+! Expires: 14 days
 ! Homepage: https://github.com/MaxxusX/domain-blocklist/
 
 # lets just block all 3p domains
@@ -37,23 +37,23 @@ gelbooru.com###container > main > div.footerAd
 gelbooru.com###container > main > div.footerAd2
 
 # these are secretly analytics or ads or something, i forgor
-||gelbooru.com/script/application3.js^
-||gelbooru.com//script/application3.js^
-||gelbooru.com/autoDebug.js^
-||gelbooru.com//autoDebug.js^
-||gelbooru.com/script/license.30.js^
-||gelbooru.com//script/license.30.js^
+||gelbooru.com/script/application3.js^$script
+||gelbooru.com//script/application3.js^$script
+||gelbooru.com/autoDebug.js^$script
+||gelbooru.com//autoDebug.js^$script
+||gelbooru.com/script/license.30.js^$script
+||gelbooru.com//script/license.30.js^$script
 
 # annoying banner
 gelbooru.com###motd:has-text("We will show one popunder ad per half day.")
 
 # hide beastiality (idk why this is even allowed)
 gelbooru.com###container > main > div.thumbnail-container > article:has(img[title~="bestiality"])
-#gelbooru.com###container > main > div.mainBodyPadding > section.image-container[data-tags~="bestiality"]
+# gelbooru.com###container > main > div.mainBodyPadding > section.image-container[data-tags~="bestiality"]
 # tag suggestion bar
 gelbooru.com###ui-id-1 > li:has-text("bestiality")
 gelbooru.com###ui-id-1 > li:has-text("beastiality")
 
 # let gelbooru support small creators!
-@@||gelbooru.com/extras^
+@@||gelbooru.com/extras^$image
 gelbooru.com#@##container > main > div.mainBodyPadding > a:has(> img[src^="https://gelbooru.com/extras/"])

@@ -5,16 +5,16 @@
 ! Expires: 14 days
 ! Homepage: https://github.com/MaxxusX/domain-blocklist/
 
-# Digital Advertising Alliance opt-out
+! Digital Advertising Alliance opt-out
 x.com##+js(set-cookie, daa, 1)
 
-# remove tracking data
+! remove tracking data
 x.com##+js(remove-session-storage-item, attribution)
 
 ! no grok
 ||x.com/i/grok^
 
-# remove annoying grok buttons
+! remove annoying grok buttons
 x.com###layers > div:first-child
 x.com##div[data-testid="primaryColumn"] div[data-testid="cellInnerDiv"]:has([data-testid="placementTracking"])
 x.com###layers > div > div:has(> div > div[data-testid="GrokDrawer"])

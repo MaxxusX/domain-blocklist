@@ -1,8 +1,8 @@
 [uBlock Origin]
 ! Title: Anti-Bytedance
 ! Description: Blocks all domains owned by Bytedance (TikTok)
-! Updated: 2025 October 16
-! Expires: 7 days
+! Updated: 2026 January 23
+! Expires: 14 days
 ! Homepage: https://github.com/MaxxusX/domain-blocklist/
 
 ||365yg.com^$all,important
@@ -44,7 +44,6 @@
 ||bdns-test.com^$all,important
 ||bdns-test.net^$all,important
 ||bdppe.net^$all,important
-||bds.snssdk.com^$all,important
 ||bdsagslb.com^$all,important
 ||bdsagslbtest.com^$all,important
 ||bdurl.com^$all,important
@@ -98,9 +97,9 @@
 ||bytedance-boe.net^$all,important
 ||bytedance.cn^$all,important
 ||bytedance.com^$all,important
-||bytedance.map.fastly.net^$all,important
 ||bytedance.net^$all,important
 ||bytedance.org^$all,important
+||bytedance.map.fastly.net^$all,important
 ||bytedanceapi.com^$all,important
 ||bytedapm.com^$all,important
 ||bytedcdn.com^$all,important
@@ -174,7 +173,6 @@
 ||dcarstatic.com^$all,important
 ||dcarvod.com^$all,important
 ||dcdapp.com^$all,important
-||dig.bdurl.net^$all,important
 ||dongchedi.com^$all,important
 ||dongchediapp.com^$all,important
 ||doubao.com^$all,important
@@ -191,7 +189,6 @@
 ||draftstatic.com^$all,important
 ||druid.vip^$all,important
 ||duoshan.com^$all,important
-||extlog.snssdk.com^$all,important
 ||faceu.com^$all,important
 ||fedlearner.net^$all,important
 ||feelgood.cn^$all,important
@@ -221,7 +218,6 @@
 ||huoshanzhibo.com^$all,important
 ||huoshanzhibo.net^$all,important
 ||hypercachenet.com^$all,important
-||i.snssdk.com^$all,important
 ||ibdxigualive.com^$all,important
 ||ibdxiguavod.com^$all,important
 ||ibytedapm.com^$all,important
@@ -257,7 +253,6 @@
 ||livecdnstatic.com^$all,important
 ||local-ip.online^$all,important
 ||luckysf.net^$all,important
-||mcs.snssdk.com^$all,important
 ||modernjs.cn^$all,important
 ||muscdn.com^$all,important
 ||muscdn.com.akamaized.net^$all,important
@@ -285,7 +280,6 @@
 ||pangolin-sdk-toutiao-b.com^$all,important
 ||pangolin-sdk-toutiao.com^$all,important
 ||pangolin-sdk-toutiao1.com^$all,important
-||pangolin.snssdk.com^$all,important
 ||panplayable-toutiao-b.com^$all,important
 ||panplayable-toutiao.com^$all,important
 ||pglstatp-sdk-toutiao.com^$all,important
@@ -306,7 +300,6 @@
 ||samasty.com^$all,important
 ||searchstatic.com^$all,important
 ||searchtoutiaolive.com^$all,important
-||sf3-ttcdn-tos.pstatp.com^$all,important
 ||shidianguji.com^$all,important
 ||sinf-test.net^$all,important
 ||sinf.net^$all,important

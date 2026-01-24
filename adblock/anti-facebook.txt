@@ -1,14 +1,14 @@
 [uBlock Origin]
 ! Title: Anti-Facebook
 ! Description: Blocks all domains owned by Facebook (Meta)
-! Updated: 2026 January 20
+! Updated: 2026 January 23
 ! Expires: 14 days
 ! Homepage: https://github.com/MaxxusX/domain-blocklist/
 
-# onion site
+! onion site
 ||facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion^$all,important
 
-# /cdn-cgi/pe/bag2 is CloudFlare's "Rocket Loader"
+! /cdn-cgi/pe/bag2 is CloudFlare's "Rocket Loader"
 /cdn-cgi/pe/bag2?*facebook.com^$all,important
 /cdn-cgi/pe/bag2?*facebook.net^$all,important
 

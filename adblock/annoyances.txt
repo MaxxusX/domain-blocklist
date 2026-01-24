@@ -1,0 +1,163 @@
+[uBlock Origin]
+! Title: mlist - Annoyances
+! Description: Blocks annoyances, distractions, and intrusive elements.
+! Updated: 2026 January 23
+! Expires: 14 days
+! Homepage: https://github.com/MaxxusX/domain-blocklist/
+
+! Brave
+search.brave.com###searchbar-home > div.example-searches
+search.brave.com###searchbar-home > div.download-cta
+search.brave.com###premium-promo-wrapper
+
+! "Devtools Detectors"
+!! https://www.npmjs.com/package/devtools-detector
+/node_modules/devtools-detector^$script
+||cdnjs.cloudflare.com/ajax/libs/devtools-detector^$script
+||unpkg.com/devtools-detector^$script
+||unpkg.com/devtools-detector@*$script
+||esm.run/devtools-detector^$script
+||esm.run/devtools-detector@*$script
+||cdn.jsdelivr.net/npm/devtools-detector^$script
+||cdn.jsdelivr.net/npm/devtools-detector@*$script
+||cdn.jsdelivr.net/gh/AEPKILL/devtools-detector^$script
+||cdn.jsdelivr.net/gh/AEPKILL/devtools-detector@*$script
+
+!! https://www.npmjs.com/package/devtools-detecter
+/node_modules/devtools-detecter^$script
+||unpkg.com/devtools-detecter^$script
+||unpkg.com/devtools-detecter@*$script
+||esm.run/devtools-detecter^$script
+||esm.run/devtools-detecter@*$script
+||cdn.jsdelivr.net/npm/devtools-detecter^$script
+||cdn.jsdelivr.net/npm/devtools-detecter@*$script
+||cdn.jsdelivr.net/gh/MHuiG/devtools-detecter^$script
+||cdn.jsdelivr.net/gh/MHuiG/devtools-detecter@*$script
+
+!! https://www.npmjs.com/package/devtools-detect
+/node_modules/devtools-detect^$script
+||unpkg.com/devtools-detect^$script
+||unpkg.com/devtools-detect@*$script
+||esm.run/devtools-detect^$script
+||esm.run/devtools-detect@*$script
+||cdn.jsdelivr.net/npm/devtools-detect^$script
+||cdn.jsdelivr.net/npm/devtools-detect@*$script
+||cdn.jsdelivr.net/gh/sindresorhus/devtools-detect^$script
+||cdn.jsdelivr.net/gh/sindresorhus/devtools-detect@*$script
+
+!! https://www.npmjs.com/package/devtools-detector-pro
+/node_modules/devtools-detector-pro^$script
+||unpkg.com/devtools-detector-pro^$script
+||unpkg.com/devtools-detector-pro@*$script
+||esm.run/devtools-detector-pro^$script
+||esm.run/devtools-detector-pro@*$script
+||cdn.jsdelivr.net/npm/devtools-detector-pro^$script
+||cdn.jsdelivr.net/npm/devtools-detector-pro@*$script
+||cdn.jsdelivr.net/gh/suplo-dev/devtools-detector^$script
+||cdn.jsdelivr.net/gh/suplo-dev/devtools-detector@*$script
+
+!! https://www.npmjs.com/package/devtools-detector-fix
+/node_modules/devtools-detector-fix^$script
+||unpkg.com/devtools-detector-fix^$script
+||unpkg.com/devtools-detector-fix@*$script
+||esm.run/devtools-detector-fix^$script
+||esm.run/devtools-detector-fix@*$script
+||cdn.jsdelivr.net/npm/devtools-detector-fix^$script
+||cdn.jsdelivr.net/npm/devtools-detector-fix@*$script
+
+!! https://www.npmjs.com/package/@leventeszucs/devtools-detect
+/node_modules/@leventeszucs/devtools-detect^$script
+||unpkg.com/@leventeszucs/devtools-detect^$script
+||unpkg.com/@leventeszucs/devtools-detect@*$script
+||esm.run/@leventeszucs/devtools-detect^$script
+||esm.run/@leventeszucs/devtools-detect@*$script
+||cdn.jsdelivr.net/npm/@leventeszucs/devtools-detect^$script
+||cdn.jsdelivr.net/npm/@leventeszucs/devtools-detect@*$script
+||cdn.jsdelivr.net/gh/lvntszcs/devtools-detector^$script
+||cdn.jsdelivr.net/gh/lvntszcs/devtools-detector@*$script
+
+!! https://www.npmjs.com/package/devtools-detector-csp
+/node_modules/devtools-detector-csp^$script
+||unpkg.com/devtools-detector-csp^$script
+||unpkg.com/devtools-detector-csp@*$script
+||esm.run/devtools-detector-csp^$script
+||esm.run/devtools-detector-csp@*$script
+||cdn.jsdelivr.net/npm/devtools-detector-csp^$script
+||cdn.jsdelivr.net/npm/devtools-detector-csp@*$script
+||cdn.jsdelivr.net/gh/Vasanthvivi/devtools-detector^$script
+||cdn.jsdelivr.net/gh/Vasanthvivi/devtools-detector@*$script
+
+!! https://www.npmjs.com/package/@innei/devtools-detector
+/node_modules/@innei/devtools-detector^$script
+||unpkg.com/@innei/devtools-detector^$script
+||unpkg.com/@innei/devtools-detector@*$script
+||esm.run/@innei/devtools-detector^$script
+||esm.run/@innei/devtools-detector@*$script
+||cdn.jsdelivr.net/npm/@innei/devtools-detector^$script
+||cdn.jsdelivr.net/npm/@innei/devtools-detector@*$script
+||cdn.jsdelivr.net/gh/Innei/devtools-detector^$script
+||cdn.jsdelivr.net/gh/Innei/devtools-detector@*$script
+
+!! https://www.npmjs.com/package/disable-devtool
+/node_modules/disable-devtool^$script
+||unpkg.com/disable-devtool^$script
+||unpkg.com/disable-devtool@*$script
+||esm.run/disable-devtool^$script
+||esm.run/disable-devtool@*$script
+||cdn.jsdelivr.net/npm/disable-devtool^$script
+||cdn.jsdelivr.net/npm/disable-devtool@*$script
+||cdn.jsdelivr.net/gh/theajack/disable-devtool^$script
+||cdn.jsdelivr.net/gh/theajack/disable-devtool@*$script
+
+!! https://www.npmjs.com/package/dinulec-disable-devtool
+/node_modules/dinulec-disable-devtool^$script
+||unpkg.com/dinulec-disable-devtool^$script
+||unpkg.com/dinulec-disable-devtool@*$script
+||esm.run/dinulec-disable-devtool^$script
+||esm.run/dinulec-disable-devtool@*$script
+||cdn.jsdelivr.net/npm/dinulec-disable-devtool^$script
+||cdn.jsdelivr.net/npm/dinulec-disable-devtool@*$script
+||cdn.jsdelivr.net/gitlab/grupa-mac-sa/dinulec-disable-devtool^$script
+||cdn.jsdelivr.net/gitlab/grupa-mac-sa/dinulec-disable-devtool@*$script
+
+!! https://www.npmjs.com/package/@comptechco/disable-devtool
+/node_modules/@comptechco/disable-devtool^$script
+||unpkg.com/@comptechco/disable-devtool^$script
+||unpkg.com/@comptechco/disable-devtool@*$script
+||esm.run/@comptechco/disable-devtool^$script
+||esm.run/@comptechco/disable-devtool@*$script
+||cdn.jsdelivr.net/npm/@comptechco/disable-devtool^$script
+||cdn.jsdelivr.net/npm/@comptechco/disable-devtool@*$script
+
+!! https://www.npmjs.com/package/jdetects
+/node_modules/jdetects^$script
+||unpkg.com/jdetects^$script
+||unpkg.com/jdetects@*$script
+||esm.run/jdetects^$script
+||esm.run/jdetects@*$script
+||cdn.jsdelivr.net/npm/jdetects^$script
+||cdn.jsdelivr.net/npm/jdetects@*$script
+||cdn.jsdelivr.net/gh/zswang/jdetects^$script
+||cdn.jsdelivr.net/gh/zswang/jdetects@*$script
+
+!! https://www.npmjs.com/package/anti-debugger
+/node_modules/anti-debugger^$script
+||unpkg.com/anti-debugger^$script
+||unpkg.com/anti-debugger@*$script
+||esm.run/anti-debugger^$script
+||esm.run/anti-debugger@*$script
+||cdn.jsdelivr.net/npm/anti-debugger^$script
+||cdn.jsdelivr.net/npm/anti-debugger@*$script
+||cdn.jsdelivr.net/gh/matiastang/anti-debugger^$script
+||cdn.jsdelivr.net/gh/matiastang/anti-debugger@*$script
+
+!! https://www.npmjs.com/package/@evelocore/anti-devtools
+/node_modules/@evelocore/anti-devtools^$script
+||unpkg.com/@evelocore/anti-devtools^$script
+||unpkg.com/@evelocore/anti-devtools@*$script
+||esm.run/@evelocore/anti-devtools^$script
+||esm.run/@evelocore/anti-devtools@*$script
+||cdn.jsdelivr.net/npm/@evelocore/anti-devtools^$script
+||cdn.jsdelivr.net/npm/@evelocore/anti-devtools@*$script
+||cdn.jsdelivr.net/gh/prabhasha2006/anti-devtools^$script
+||cdn.jsdelivr.net/gh/prabhasha2006/anti-devtools@*$script

@@ -1,14 +1,17 @@
 [uBlock Origin]
 ! Title: No AI
 ! Description: Blocks AI.
-! Updated: 2026 January 23
+! Updated: 2026 February 6
 ! Expires: 14 days
 ! Homepage: https://github.com/MaxxusX/domain-blocklist/
 
-! Brave
+! Brave Search
 ||api.search.brave.com/res/*/summarizer^$domain=search.brave.com
 search.brave.com###searchform-actions > div:has(> div > button#submit-llm-button)
 search.brave.com###autocomplete > div.suggestions > button.suggestion.llm
 
 ! Twitter
 ||x.com/i/grok^
+
+! Microsoft Learn
+||learn.microsoft.com/api/aisearch^$first-party

@@ -1,0 +1,8 @@
+[uBlock Origin]
+! Title: mlist - Age Verification
+! Description: Blocks age verification.
+! Updated: 2026 March 28
+! Expires: 14 days
+! Homepage: https://github.com/MaxxusX/domain-blocklist/
+
+||withpersona.com^$all,important

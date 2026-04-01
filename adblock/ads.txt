@@ -1,0 +1,107 @@
+[uBlock Origin]
+! Title: mlist - Ads
+! Description: Blocks ads.
+! Updated: 2026 March 28
+! Expires: 14 days
+! Homepage: https://github.com/MaxxusX/domain-blocklist/
+
+
+! Brave
+!! using $important cuz brave is known to whitelist their stuff in their filterlists
+||ads.brave.com^$important
+||ads.brave.software^$important
+||ads.bravesoftware.com^$important
+||ads-static.brave.com^$important
+||ads-static.brave.software^$important
+||ads-static.bravesoftware.com^$important
+||search-ads-confirmation.brave.com^$important
+||search-ads-confirmation.brave.software^$important
+||search-ads-confirmation.bravesoftware.com^$important
+||ads-admin.brave.com^$important
+||ads-admin.brave.software^$important
+||ads-admin.bravesoftware.com^$important
+||rewards.brave.com^$important
+||rewards.brave.software^$important
+||rewards.bravesoftware.com^$important
+||basicattentiontoken.org^$important
+||tripadvisor.com^$domain=search.brave.com,3p,important
+||kayak.com^$domain=search.brave.com,3p,important
+||amazon.com^$domain=search.brave.com,3p,important
+||search.brave.com/api/ads^$important
+
+search.brave.com###search-ad
+search.brave.com###main > div.settings-wrapper > div.column-layout > div.cols > aside.sidebar
+search.brave.com##[data-type="ad"]
+
+
+! Gelbooru
+gelbooru.com##+js(set-constant, exo99HL3903jjdxtrnLoad, true)
+gelbooru.com##+js(set-constant, ybejrn, undefined)
+gelbooru.com##+js(set-constant, ExoLoader, undefined)
+
+||gelbooru.com/script/application3.js^$script
+||gelbooru.com//script/application3.js^$script
+||gelbooru.com/autoDebug.js^$script
+||gelbooru.com//autoDebug.js^$script
+||gelbooru.com/script/license.30.js^$script
+||gelbooru.com//script/license.30.js^$script
+
+||realsrv.com^
+||magsrv.com^
+||tsyndicate.com^
+||isolatedovercomepasted.com^
+||bankingbloatedcaptive.com^
+||divisiondrearilyunfiled.com^
+||diagramjawlineunhappy.com^
+||boxypluckunrelated.com^
+||lookmommynohands.com^
+||dinvziwfia.com^
+||ohgqwicco.com^
+||orcpfawzuvfe.com^
+||mnaspm.com^
+||ku34bh9la09.com^
+||ourdreamstaticpages.pages.dev^
+||dodgyfactoidprecut.com^
+||happyleafmotion.com^
+
+gelbooru.com###container > main > div.mainBodyPadding > div:has(> a:has-text("AI Jerk Off"))
+gelbooru.com###container > main > div.mainBodyPadding > div:has(> script[src])
+gelbooru.com###container > main > div.mainBodyPadding > div:has(> iframe)
+gelbooru.com###container > main > div.mainBodyPadding > center:has(> div > iframe)
+gelbooru.com###container > main > div.headerAd
+gelbooru.com###container > main > div.footerAd
+gelbooru.com###container > main > div.footerAd2
+
+
+! MDN
+!! opt out of ads
+developer.mozilla.org##+js(set-local-storage-item, nop, yes)
+
+!! ads (new layout)
+||developer.mozilla.org/pong^$all
+||developer.mozilla.org/pimg^$image
+developer.mozilla.org##body > div.page-layout__banner
+developer.mozilla.org##section.placement-container
+developer.mozilla.org##div.placement-container
+developer.mozilla.org##mdn-placement-note
+developer.mozilla.org##mdn-placement-no
+developer.mozilla.org##mdn-placement-top
+developer.mozilla.org##div.top-placement
+developer.mozilla.org##mdn-placement-sidebar
+developer.mozilla.org##section.sidebar-placement
+developer.mozilla.org##mdn-placement-bottom
+developer.mozilla.org##div.bottom-placement
+developer.mozilla.org##mdn-placement-hp-main
+developer.mozilla.org##div.hp-main-placement
+
+!! ads (old layout)
+developer.mozilla.org###root > .page-wrapper > .top-banner
+developer.mozilla.org###root > .page-wrapper > .bottom-banner-container
+developer.mozilla.org###root > .page-wrapper > .main-wrapper > .sidebar-container > .toc-container > .side
+developer.mozilla.org##.place
+developer.mozilla.org##.pong-box
+developer.mozilla.org##.pong-box2
+developer.mozilla.org##.pong
+developer.mozilla.org##.pong-cta
+developer.mozilla.org##.pong-note
+developer.mozilla.org##.no-pong

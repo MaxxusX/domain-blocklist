@@ -1,0 +1,5 @@
+!title:    Clean MDN
+!desc:     Removes ads and other annoyances on MDN Web Docs
+!modified: 2025 March 8
+
+@cosmetic, developer.mozilla.org; div.sidebar-container > div.toc-container > section.place.side

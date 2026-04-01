@@ -1,0 +1,72 @@
+[uBlock Origin]
+! Title: No AI
+! Description: Blocks AI.
+! Updated: 2026 March 28
+! Expires: 14 days
+! Homepage: https://github.com/MaxxusX/domain-blocklist/
+
+
+! Brave
+||api.search.brave.com/res/*/summarizer^
+search.brave.com###submit-llm-button
+search.brave.com###autocomplete > div.suggestions > button.suggestion.llm
+
+||search.brave.com/ask^
+||search.brave.com/ask/__data.json^
+# unsure if this is only for the llm ask page
+||search.brave.com/api/tap/v1/new^
+# streams llm responses
+||search.brave.com/api/tap/v1/stream^
+# runs llm tools
+||search.brave.com/api/tap/v1/run_tool^
+search.brave.com###submit-llm-button
+
+
+! Twitter
+||x.com/i/grok^
+||grok.x.com^
+||grok-v2.x.ai^
+||grok.com^
+||grokusercontent.com^
+
+!! triggered when you click the grok button
+||x.com/i/api/graphql/QAPGIKJVaPXYD-gO9kxc9w/GrokHome^
+!! no idea what this does tbh but it's triggered when you click the grok button or change models
+||x.com/i/api/graphql/IjQ-egg0uPkY11NyPMfRMQ/PutClientEducationFlag^
+!! switching grok models
+||x.com/i/api/graphql/NqLS09LPofalCjVhFolKtA/SetGrokPreferences^
+!! starting conversations with grok
+||x.com/i/api/graphql/vvC5uy7pWWHXS2aDi1FZeA/CreateGrokConversation^
+!! rating grok responses
+||x.com/i/api/graphql/zv33bjbLTa35aipqMBnLgw/feedbackMutation^
+!! sharing grok conversations
+||x.com/i/api/graphql/VjcMAfH8MXzaWoNmAsUidw/useShareGrokConversationMutation^
+!! viewing shared grok conversations
+||api.x.com/graphql/cmQFcBK1c7fYidSIgvM9QQ/GrokShare^
+!! bookmarking grok conversations
+||x.com/i/api/graphql/_6czUDKiWzcvBUKMoDZ19w/GrokPinConversation^
+!! unbookmarking grok conversations
+||x.com/i/api/graphql/-5e798p4EVbuhGGFFuw3Tg/GrokUnpinConversation^
+!! getting bookmarked conversations
+||x.com/i/api/graphql/BHKxYTkc5SCupV7oqJBr0g/GrokPinnedConversations^
+!! viewing past conversations
+||x.com/i/api/graphql/9Hyh5D4-WXLnExZkONSkZg/GrokHistory^
+!! deleting conversations
+# ||x.com/i/api/graphql/TlKHSWVMVeaa-i7dqQqFQA/ConversationItem_DeleteConversationMutation^
+!! viewing media from past conversations
+||x.com/i/api/graphql/azn3Sg0APPjb2Jtd7gqxsw/GrokMediaHistory^
+!! uploading media to grok
+||x.com/i/api/2/grok/attachment.json^
+!! media in grok conversations
+||ton.x.com/i/ton/data/grok-attachment^
+
+x.com###layers > div:first-child
+x.com##div[data-testid="primaryColumn"] div[data-testid="cellInnerDiv"]:has([data-testid="placementTracking"])
+x.com###layers > div > div:has(> div > div[data-testid="GrokDrawer"])
+x.com##header nav > a[href="/i/grok"]
+x.com##article[data-testid="tweet"] div:has(> button[aria-label="Grok actions"])
+x.com##[aria-label="Primary"][role="navigation"] > a[aria-label="Grok"][role="link"]
+
+
+! Microsoft Learn
+||learn.microsoft.com/api/aisearch^

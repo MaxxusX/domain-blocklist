@@ -1,0 +1,8 @@
+[uBlock Origin]
+! Title: mlist - IP Grabbers
+! Description: Blocks IP Grabbers.
+! Updated: 2026 March 28
+! Expires: 14 days
+! Homepage: https://github.com/MaxxusX/domain-blocklist/
+
+||httpbin.org/ip^

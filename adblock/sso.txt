@@ -1,0 +1,9 @@
+[uBlock Origin]
+! Title: mlist - SSO
+! Description: Blocks SSO.
+! Updated: 2026 March 28
+! Expires: 14 days
+! Homepage: https://github.com/MaxxusX/domain-blocklist/
+
+||accounts.google.com^$3p,domain=~accounts.google.com|~google.com|~youtube.com
+||api.x.com/1.1/onboarding/sso_init.json^

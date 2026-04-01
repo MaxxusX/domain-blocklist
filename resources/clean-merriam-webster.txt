@@ -1,0 +1,21 @@
+!title:    Clean Merriam-Webster
+!desc:     Removes annoyances and simplifies the interface of Merriam-Webster
+!modified: 2025 March 8
+
+@cosmetic, merriam-webster.com; #main-banner-ad-container
+@cosmetic, merriam-webster.com; #definition-right-rail
+@cosmetic, merriam-webster.com; #base-header > nav > div.navigation-container
+@cosmetic, merriam-webster.com; #examples
+@cosmetic, merriam-webster.com; #word-history
+@cosmetic, merriam-webster.com; #related-phrases
+@cosmetic, merriam-webster.com; #related-articles
+@cosmetic, merriam-webster.com; #nearby-entries
+@cosmetic, merriam-webster.com; #citations
+@cosmetic, merriam-webster.com; #social-links
+@cosmetic, merriam-webster.com; #subscribe-unabridged
+@cosmetic, merriam-webster.com; .main-container > .additional-content-area
+@cosmetic, merriam-webster.com; .global-footer > .footer-mast > .mw-logo-section
+@cosmetic, merriam-webster.com; .global-footer > .footer-mast > .footer-mast-content > .footer-subscribe-block
+@cosmetic, merriam-webster.com; .global-footer > .footer-mast > .footer-mast-content > .follow-us
+
+@restyle,  merriam-webster.com; .global-footer > .footer-foot ;=> { min-height: auto !important; }

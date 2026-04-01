@@ -1,0 +1,89 @@
+[uBlock Origin]
+! Title: mlist - Privacy
+! Description: Blocks trackers, CSP reports, and other invasions of privacy.
+! Updated: 2026 March 28
+! Expires: 14 days
+! Homepage: https://github.com/MaxxusX/domain-blocklist/
+
+
+! Google
+||play.googleapis.com^$important
+||play.google.com^$important
+||play.google.com/log^
+||google.com/_/*/jserror^
+||google.com/_/*/cspreport
+
+
+! Twitter
+||api.x.com/1.1/graphql/error_log.json^
+||api.x.com/1.1/graphql/user_flow.json^
+||api.x.com/1.1/graphql/ces/p2^
+
+x.com##+js(remove-session-storage-item, attribution)
+
+!! Digital Advertising Alliance opt-out
+x.com##+js(set-cookie, daa, 1)
+
+
+! Grok
+||grok.com/_data/v1/events^
+||grok.com/api/log_metric^
+
+
+! Reddit
+||w3-reporting.reddit.com^
+||w3-reporting-csp.reddit.com^
+||w3-reporting-nel.reddit.com^
+||error-tracking.reddit.com^
+||reddit.com/svc/shreddit/events^
+
+
+! Brave
+!! using $important cuz brave is known to whitelist their stuff in their filterlists
+||cdn.search.brave.com/serp/*/static/serp-js/telemetry^$important
+||search.brave.com/api/metrics^$important
+||search.brave.com/api/metrics/serpkit-errors^$important
+
+||analytics.brave.com^$important
+||analytics.brave.software^$important
+||analytics.bravesoftware.com^$important
+||metrics.brave.com^$important
+||metrics.brave.software^$important
+||metrics.bravesoftware.com^$important
+||metric-proxy.brave.com^$important
+||metric-proxy.brave.software^$important
+||metric-proxy.bravesoftware.com^$important
+||matomo.brave.com^$important
+||matomo.brave.software^$important
+||matomo.bravesoftware.com^$important
+||p3a.brave.com^$important
+||p3a.brave.software^$important
+||p3a.bravesoftware.com^$important
+||stats.brave.com^$important
+||stats.brave.software^$important
+||stats.bravesoftware.com^$important
+||referrals.brave.com^$important
+||referrals.brave.software^$important
+||referrals.bravesoftware.com^$important
+
+
+! 404media
+||404media.co/assets/js/bsa.js^$script,1p
+||404media.co/public/member-attribution.min.js^$script,1p
+
+
+! Mozilla
+||telemetry.mozilla.org^
+||debug-ping-preview.firebaseapp.com^
+
+mozilla.org##+js(set-cookie, moz-1st-party-data-opt-out, true)
+allizom.org##+js(set-cookie, moz-1st-party-data-opt-out, true)
+
+mozilla.org##+js(trusted-set-cookie, moz-1st-party-data-opt-out, true, 1year, /, domain, .mozilla.org)
+allizom.org##+js(trusted-set-cookie, moz-1st-party-data-opt-out, true, 1year, /, domain, .allizom.org)
+
+
+! MDN
+||developer.mozilla.org/static/js/gtag.js^
+||developer.mozilla.org/static/client/7326.*.js^
+||developer.mozilla.org/api/v1/ping^

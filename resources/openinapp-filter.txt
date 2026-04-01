@@ -1,0 +1,44 @@
+!title:    OpenInApp Filter
+!desc:     Blocks ads/analytics on OpenInApp, and blocks connections to it's paywall "link shorteners"
+!modified: 2025 March 6
+
+# openinapp.com
+@from, openinapp.com; => gstatic.com
+@from, openinapp.com; => googletagmanager.com
+@from, openinapp.com; => google.com
+@from, openinapp.com; => cloudflareinsights.com
+@from, openinapp.com; => ably.com
+@from, openinapp.com; => openinapp.com/JS/gads.js
+@from, openinapp.com; => openinapp.com/JS/conversion.js
+@from, openinapp.com; => mixpanel.com
+@from, openinapp.com; => googlesyndication.com
+@from, openinapp.com; => scripts.openinapp.com/e763dbea-90a0-4a4a-8837-c3e88cfbdbd0.js
+
+# oia.bio
+@from, oia.bio; => google.com
+@from, oia.bio; => gstatic.com
+@from, oia.bio; => googletagmanager.com
+@from, oia.bio; => facebook.com
+@from, oia.bio; => facebook.net
+@from, oia.bio; => topsecret.link
+@from, oia.bio; => openinapp.com
+@from, oia.bio; => api.openinapp.com
+@from, oia.bio; => nodeapi.openinapp.com
+@from, oia.bio; => cloudflareinsights.com
+@from, oia.bio; => ably.com
+@from, oia.bio; => mixpanel.com
+
+# topsecret.link - annoying pay-to-continue link shortener
+@domain, topsecret.link
+@from, oia.bio; => google.com
+@from, oia.bio; => gstatic.com
+@from, oia.bio; => googletagmanager.com
+@from, oia.bio; => facebook.com
+@from, oia.bio; => facebook.net
+@from, oia.bio; => topsecret.link
+@from, oia.bio; => openinapp.com
+@from, oia.bio; => api.openinapp.com
+@from, oia.bio; => nodeapi.openinapp.com
+@from, oia.bio; => cloudflareinsights.com
+@from, oia.bio; => ably.com
+@from, oia.bio; => mixpanel.com

@@ -1,0 +1,17 @@
+[uBlock Origin]
+! Title: mlist - Barebones
+! Description: Blocks non-critical resources to slim down pages.
+! Updated: 2026 March 28
+! Expires: 14 days
+! Homepage: https://github.com/MaxxusX/domain-blocklist/
+
+
+! Twitter
+||api.x.com/1.1/hashflags.json^
+
+/cdn-cgi/l/email-protection^
+/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js^$script
+
+||js.stripe.com^$3p
+
+||www.googleapis.com/webfonts^

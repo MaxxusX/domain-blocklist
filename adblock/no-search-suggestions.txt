@@ -1,0 +1,20 @@
+[uBlock Origin]
+! Title: No Search Suggestions
+! Description: Blocks search suggestions.
+! Updated: 2026 January 20
+! Expires: 14 days
+! Homepage: https://github.com/MaxxusX/domain-blocklist/
+
+
+! Google
+||cloudsearch.googleapis.com/v1/query/suggest^$3p,post
+||places.googleapis.com/v1/places:autocomplete^$3p,post
+||retail.googleapis.com/v2/*:completeQuery^$get
+||retail.googleapis.com/v2beta/*:completeQuery^$get
+||retail.googleapis.com/v2alpha/*:completeQuery^$get
+
+
+! Brave
+||search.brave.com/api/suggest^
+||api.search.brave.com/res/*/suggest^
+search.brave.com###searchform > div#autocomplete

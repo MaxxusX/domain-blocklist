@@ -1,0 +1,19 @@
+* text=auto eol=lf
+
+*.txt text
+*.md text
+*.json text
+*.toml text
+*.yaml text
+*.yml text
+*.lua text
+*.luau text
+.editorconfig text
+.gitattributes text
+.gitignore text
+CODEOWNERS text
+COPYING text
+LESSER text
+
+[core]
+looseCompression 3

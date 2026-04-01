@@ -1,0 +1,13 @@
+!title:    Clean Twitter
+!desc:     Removes annoyances and simplifies the interface of Twitter. also removes tracking data
+!modified: 2025 March 8
+
+# remove tracking data
+@scriptlet, twitter.com, x.com; remove-session-storage-item, attribution
+
+# remove annoying grok buttons
+@cosmetic, twitter.com, x.com; body > div#react-root > div > div > div#layers > div > div:has(> div > div[data-testid="GrokDrawer"])
+@cosmetic, twitter.com, x.com; body > div#react-root > div > div > div[data-at-shortcutkeys] > header[role="banner"] > div > div > div > div > div > nav[role="navigation"] > a[href="/i/grok"]
+@cosmetic, twitter.com, x.com; body > div#react-root > div > div > div[data-at-shortcutkeys] > header[role="banner"] > div > div > div > div > div > nav[role="navigation"] > a[href="/i/premium_sign_up"]
+@cosmetic, twitter.com, x.com; body > div#react-root > div > div > div[data-at-shortcutkeys] > header[role="banner"] > div > div > div > div > div > nav[role="navigation"] > a[href="/i/verified-orgs-signup"]
+@cosmetic, twitter.com, x.com; article[data-testid="tweet"] div:has(> button[aria-label="Grok actions"])

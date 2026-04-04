@@ -70,3 +70,7 @@ x.com##[aria-label="Primary"][role="navigation"] > a[aria-label="Grok"][role="li
 
 ! Microsoft Learn
 ||learn.microsoft.com/api/aisearch^
+||learn.microsoft.com/*/media/ask-learn^$image
+learn.microsoft.com###banner-holder
+learn.microsoft.com###article-header-page-actions > button[data-bi-name=ask-learn-assistant-entry]
+learn.microsoft.com###main > div[data-main-column] > div > div[data-id=ai-summary]

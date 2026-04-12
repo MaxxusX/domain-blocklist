@@ -1,7 +1,7 @@
 [uBlock Origin]
-! Title: No Search Suggestions
+! Title: mlist - No Search Suggestions
 ! Description: Blocks search suggestions.
-! Updated: 2026 January 20
+! Updated: 2026 April 11
 ! Expires: 14 days
 ! Homepage: https://github.com/MaxxusX/domain-blocklist/
 

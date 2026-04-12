@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: mlist - No AI
 ! Description: Blocks AI.
-! Updated: 2026 March 28
+! Updated: 2026 April 11
 ! Expires: 14 days
 ! Homepage: https://github.com/MaxxusX/domain-blocklist/
 

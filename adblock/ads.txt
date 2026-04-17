@@ -64,7 +64,8 @@ gelbooru.com##+js(set-constant, ExoLoader, undefined)
 ||dodgyfactoidprecut.com^
 ||happyleafmotion.com^
 
-gelbooru.com###container > main > div.mainBodyPadding > div:has(> a:has-text("AI Jerk Off"))
+gelbooru.com###container > main > div:has(> a[href^="https://v4.dvdstr.com"])
+gelbooru.com###container > main > div.mainBodyPadding > div:first-child:has(> a[href^="https://v4.dvdstr.com"])
 gelbooru.com###container > main > div.mainBodyPadding > div:has(> script[src])
 gelbooru.com###container > main > div.mainBodyPadding > div:has(> iframe)
 gelbooru.com###container > main > div.mainBodyPadding > center:has(> div > iframe)

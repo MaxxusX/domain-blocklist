@@ -64,6 +64,7 @@ gelbooru.com##+js(set-constant, ExoLoader, undefined)
 ||dodgyfactoidprecut.com^
 ||happyleafmotion.com^
 
+gelbooru.com###container > main > center:has(> a[href^="https://rule34.us"])
 gelbooru.com###container > main > div:has(> a[href^="https://v4.dvdstr.com"])
 gelbooru.com###container > main > div.mainBodyPadding > div:first-child:has(> a[href^="https://v4.dvdstr.com"])
 gelbooru.com###container > main > div.mainBodyPadding > div:has(> script[src])

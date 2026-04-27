@@ -46,6 +46,8 @@ gelbooru.com##+js(set-constant, ExoLoader, undefined)
 ||gelbooru.com/script/license.30.js^$script
 ||gelbooru.com//script/license.30.js^$script
 
+||video-cdn4.gelbooru.com/r34.mp4^$media
+
 ||realsrv.com^
 ||magsrv.com^
 ||tsyndicate.com^

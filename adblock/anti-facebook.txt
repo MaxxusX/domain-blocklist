@@ -17,7 +17,8 @@
 ||meta.com^$all,important
 
 ! Giphy
-||giphy.com^$all,important
+||giphy.com^$all
+@@||media.giphy.com^$image
 ||giphy.map.fastly.net^$all,important
 ||giphyscripts.s3.amazonaws.com^$all,important
 

@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: Clean Gelbooru
 ! Description: Removes ads, annoyances, and hides beastiality on Gelbooru
-! Updated: 2026 March 28
+! Updated: 2026 May 13
 ! Expires: 14 days
 ! Homepage: https://github.com/MaxxusX/domain-blocklist/
 
@@ -14,8 +14,8 @@
 gelbooru.com###container > main > div.thumbnail-container > article:has(img[title~="bestiality"])
 ! gelbooru.com###container > main > div.mainBodyPadding > section.image-container[data-tags~="bestiality"]
 ! tag suggestion bar
-gelbooru.com###ui-id-1 > li:has-text("bestiality")
-gelbooru.com###ui-id-1 > li:has-text("beastiality")
+!! gelbooru.com###ui-id-1 > li:has-text("bestiality")
+!! gelbooru.com###ui-id-1 > li:has-text("beastiality")
 
 ! let gelbooru support small creators!
 @@||gelbooru.com/extras^$image

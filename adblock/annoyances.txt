@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: mlist - Annoyances
 ! Description: Blocks annoyances, distractions, and intrusive elements.
-! Updated: 2026 March 28
+! Updated: 2026 May 13
 ! Expires: 14 days
 ! Homepage: https://github.com/MaxxusX/domain-blocklist/
 
@@ -20,7 +20,9 @@ x.com##[aria-label="Primary"][role="navigation"] > a[aria-label="Premium"][role=
 www.reddit.com###right-sidebar-container > div:has(> faceplate-tracker)
 
 ! Gelbooru
-gelbooru.com###motd:has-text("We will show one popunder ad per half day.")
+||video-cdn4.gelbooru.com/r34.mp4^$media
+gelbooru.com###container > main > center:has(> a[href^="https://rule34.us"])
+! gelbooru.com###motd:has-text("We will show one popunder ad per half day.")
 
 ! "Devtools Detectors"
 !! https://www.npmjs.com/package/devtools-detector

@@ -9,6 +9,7 @@
 search.brave.com###searchbar-home > div.example-searches
 search.brave.com###searchbar-home > div.download-cta
 search.brave.com###premium-promo-wrapper
+search.brave.com###voice-input-button
 
 ! Twitter
 x.com##header nav > a[href="/i/premium_sign_up"]

@@ -21,7 +21,7 @@ x.com##[aria-label="Primary"][role="navigation"] > a[aria-label="Premium"][role=
 www.reddit.com###right-sidebar-container > div:has(> faceplate-tracker)
 
 ! Gelbooru
-gelbooru.com###motd:has-text("We will show one popunder ad per half day.")
+gelbooru.com###motd
 
 ! "Devtools Detectors"
 !! https://www.npmjs.com/package/devtools-detector

@@ -21,8 +21,6 @@ x.com##[aria-label="Primary"][role="navigation"] > a[aria-label="Premium"][role=
 www.reddit.com###right-sidebar-container > div:has(> faceplate-tracker)
 
 ! Gelbooru
-||video-cdn4.gelbooru.com/r34.mp4^$media
-gelbooru.com###container > main > center:has(> a[href^="https://rule34.us"])
 gelbooru.com###motd:has-text("We will show one popunder ad per half day.")
 
 ! "Devtools Detectors"

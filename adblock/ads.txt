@@ -67,9 +67,10 @@ gelbooru.com##+js(set-constant, ExoLoader, undefined)
 ||happyleafmotion.com^
 
 gelbooru.com###container > main > center:has(> a[href^="https://rule34.us"])
-gelbooru.com###container > main > div:has(> a[href^="https://v4.dvdstr.com"])
+!gelbooru.com###container > main > div:has(> a[href^="https://v4.dvdstr.com"])
 !gelbooru.com###container > main > div.mainBodyPadding > div:first-child:has(> a[href^="https://v4.dvdstr.com"])
 !gelbooru.com###container > main > div.mainBodyPadding > div:has(> a[href^="https://v6.realxxx.com"])
+gelbooru.com###container > main > div[style="padding: 20px; font-size: 1.2em; font-weight: bold;"]:has(> a)
 gelbooru.com###container > main > div.mainBodyPadding > div[style="padding: 20px; font-size: 1.2em; font-weight: bold;"]:has(> a)
 gelbooru.com###container > main > div.mainBodyPadding > div:has(> script[src])
 gelbooru.com###container > main > div.mainBodyPadding > div:has(> iframe)

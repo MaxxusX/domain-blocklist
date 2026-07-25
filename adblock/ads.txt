@@ -46,7 +46,8 @@ gelbooru.com##+js(set-constant, ExoLoader, undefined)
 ||gelbooru.com/script/license.30.js^$script
 ||gelbooru.com//script/license.30.js^$script
 
-||video-cdn4.gelbooru.com/r34.mp4^$media
+||gelbooru.com/r34.mp4^$media
+gelbooru.com###container > main > center:has(> a[href^="https://rule34.us"])
 
 ||realsrv.com^
 ||magsrv.com^

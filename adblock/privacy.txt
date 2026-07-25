@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: mlist - Privacy
 ! Description: Blocks trackers, CSP reports, and other invasions of privacy.
-! Updated: 2026 March 28
+! Updated: 2026 July 25
 ! Expires: 14 days
 ! Homepage: https://github.com/MaxxusX/domain-blocklist/
 
@@ -36,6 +36,26 @@ x.com##+js(set-cookie, daa, 1)
 ||w3-reporting-nel.reddit.com^
 ||error-tracking.reddit.com^
 ||reddit.com/svc/shreddit/events^
+
+!! analytics. these are (probably) used for actual stuff too, so this probably breaks a lot of stuff
+!#if false
+||reddit.com/api/login^$xhr
+||reddit.com/api/login.json^$xhr
+||reddit.com/api/register^$xhr
+||reddit.com/api/register.json^$xhr
+||reddit.com/api/share^$xhr
+||reddit.com/api/share.json^$xhr
+||reddit.com/api/comment^$xhr
+||reddit.com/api/comment.json^$xhr
+||reddit.com/api/friend^$xhr
+||reddit.com/api/friend.json^$xhr
+||reddit.com/api/vote^$xhr
+||reddit.com/api/vote.json^$xhr
+||reddit.com/api/submit^$xhr
+!#endif
+
+!! fuck it. too many endpoints to find them all.
+||reddit.com/api^$xhr
 
 
 ! Brave

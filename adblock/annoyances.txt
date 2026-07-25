@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: mlist - Annoyances
 ! Description: Blocks annoyances, distractions, and intrusive elements.
-! Updated: 2026 July 6
+! Updated: 2026 July 25
 ! Expires: 14 days
 ! Homepage: https://github.com/MaxxusX/domain-blocklist/
 
@@ -19,6 +19,33 @@ x.com##[aria-label="Primary"][role="navigation"] > a[aria-label="Premium"][role=
 ! Reddit
 !! "new to reddit?" sidebar promo
 www.reddit.com###right-sidebar-container > div:has(> faceplate-tracker)
+
+! Old Reddit
+!! header
+old.reddit.com###sr-header-area
+!! log in / sign up
+old.reddit.com###header-bottom-right
+
+!! "become a redditor" header promo
+old.reddit.com##body > div.content > section.listingsignupbar
+
+!! "submit link" and "submit text" sidebar buttons
+old.reddit.com##body > div.side > div.spacer:has(> div.submit)
+
+!! "message the mods" sidebar button
+old.reddit.com##body > div.side > div.spacer:has(> div.sidecontentbox)
+
+!! read next / "discussions in r/" sidebar
+old.reddit.com##body > div.side > div > div.read-next-container
+
+!! leftover sidebar spacers from stuff we hid
+old.reddit.com##body > div.side > div.spacer:empty
+
+!! "create an account" comments promo
+old.reddit.com##body.comments-page > div.content > div.commentarea > section.commentsignupbar
+
+||redditstatic.com/onetrust.$script
+||redditstatic.com/about-this-ad-modal.$css
 
 ! Gelbooru
 gelbooru.com###motd

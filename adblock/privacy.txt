@@ -11,7 +11,7 @@
 ||play.google.com^$important
 ||play.google.com/log^
 ||google.com/_/*/jserror^
-||google.com/_/*/cspreport
+||google.com/_/*/cspreport^
 
 
 ! Twitter
@@ -38,7 +38,6 @@ x.com##+js(set-cookie, daa, 1)
 ||reddit.com/svc/shreddit/events^
 
 !! analytics. these are (probably) used for actual stuff too, so this probably breaks a lot of stuff
-!#if false
 ||reddit.com/api/login^$xhr
 ||reddit.com/api/login.json^$xhr
 ||reddit.com/api/register^$xhr
@@ -52,10 +51,6 @@ x.com##+js(set-cookie, daa, 1)
 ||reddit.com/api/vote^$xhr
 ||reddit.com/api/vote.json^$xhr
 ||reddit.com/api/submit^$xhr
-!#endif
-
-!! fuck it. too many endpoints to find them all.
-||reddit.com/api^$xhr
 
 
 ! Brave
@@ -88,8 +83,8 @@ x.com##+js(set-cookie, daa, 1)
 
 
 ! 404media
-||404media.co/assets/js/bsa.js^$script,1p
-||404media.co/public/member-attribution.min.js^$script,1p
+||404media.co/assets/js/bsa.js^$script
+||404media.co/public/member-attribution.min.js^$script
 
 
 ! Mozilla

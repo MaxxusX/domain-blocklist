@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: mlist - Privacy
 ! Description: Blocks trackers, CSP reports, and other invasions of privacy.
-! Updated: 2026 July 25
+! Updated: 2026 August 21
 ! Expires: 14 days
 ! Homepage: https://github.com/MaxxusX/domain-blocklist/
 
@@ -15,9 +15,22 @@
 
 
 ! Twitter
+||t.co^$important
+
+||api.x.com/1.1/flow/viewer.json^
+||api.x.com/1.1/graphql/viewer_context.json^
+||api.x.com/1.1/graphql/app_context.json^
 ||api.x.com/1.1/graphql/error_log.json^
 ||api.x.com/1.1/graphql/user_flow.json^
 ||api.x.com/1.1/graphql/ces/p2^
+
+||abs.twimg.com/x-web/x-web/assets/telemetry-$script
+||abs.twimg.com/x-web/x-web/assets/use-analytics-$script
+||abs.twimg.com/x-web/x-web/assets/install-sentry-tracing-$script
+||abs.twimg.com/x-web/x-web/assets/open-sentry-crash-feedback-$script
+||abs.twimg.com/x-web/x-web/assets/ensure-sentry-feedback-integration-$script
+||abs.twimg.com/x-web/x-web/assets/sentry-feedback-integration-$script
+||abs.twimg.com/x-web/x-web/assets/castle.umd-$script
 
 x.com##+js(remove-session-storage-item, attribution)
 
@@ -36,6 +49,7 @@ x.com##+js(set-cookie, daa, 1)
 ||w3-reporting-nel.reddit.com^
 ||error-tracking.reddit.com^
 ||reddit.com/svc/shreddit/events^
+||reddit.com/svc/shreddit/perfMetrics^
 
 !! analytics. these are (probably) used for actual stuff too, so this probably breaks a lot of stuff
 ||reddit.com/api/login^$xhr
@@ -57,7 +71,6 @@ x.com##+js(set-cookie, daa, 1)
 !! using $important cuz brave is known to whitelist their stuff in their filterlists
 ||cdn.search.brave.com/serp/*/static/serp-js/telemetry^$important
 ||search.brave.com/api/metrics^$important
-||search.brave.com/api/metrics/serpkit-errors^$important
 
 ||analytics.brave.com^$important
 ||analytics.brave.software^$important
@@ -91,14 +104,22 @@ x.com##+js(set-cookie, daa, 1)
 ||telemetry.mozilla.org^
 ||debug-ping-preview.firebaseapp.com^
 
-mozilla.org##+js(set-cookie, moz-1st-party-data-opt-out, true)
-allizom.org##+js(set-cookie, moz-1st-party-data-opt-out, true)
-
-mozilla.org##+js(trusted-set-cookie, moz-1st-party-data-opt-out, true, 1year, /, domain, .mozilla.org)
-allizom.org##+js(trusted-set-cookie, moz-1st-party-data-opt-out, true, 1year, /, domain, .allizom.org)
+mozilla.org,allizom.org##+js(set-cookie, moz-1st-party-data-opt-out, true)
+mozilla.org,allizom.org##+js(trusted-set-cookie, moz-1st-party-data-opt-out, true, 1year, /, domain, .mozilla.org)
 
 
 ! MDN
-||developer.mozilla.org/static/js/gtag.js^
-||developer.mozilla.org/static/client/7326.*.js^
+||developer.mozilla.org/static/js/gtag.js^$script
+||developer.mozilla.org/static/client/7326.^$script
 ||developer.mozilla.org/api/v1/ping^
+
+
+! GitHub
+||collector.github.com^
+||api.github.com/_private/browser/stats^
+||api.github.com/_private/browser/errors^
+
+
+! Google & Chrome Developer Docs
+||www.gstatic.com/devrel-devsite/prod/*/developers/js/devsite_devsite_analytics_module.js^$3p,script
+||www.gstatic.com/devrel-devsite/prod/*/developers/js/devsite_devsite_analytics_scope_module.js^$3p,script

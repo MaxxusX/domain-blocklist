@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: mlist - No AI
 ! Description: Blocks AI.
-! Updated: 2026 April 11
+! Updated: 2026 August 21
 ! Expires: 14 days
 ! Homepage: https://github.com/MaxxusX/domain-blocklist/
 
@@ -22,12 +22,19 @@ search.brave.com###autocomplete > div.suggestions > button.suggestion.llm
 search.brave.com###submit-llm-button
 
 
+! GitHub
+||githubcopilot.com^
+
+
 ! Twitter
 ||x.com/i/grok^
+||x.com/os-grok.xml^
 ||grok.x.com^
-||grok-v2.x.ai^
+||x.ai^
 ||grok.com^
 ||grokusercontent.com^
+||abs.twimg.com/x-web/x-web/assets/grok-$script
+||abs.twimg.com/x-web/x-web/assets/icon-grok-logo-$script
 
 !! triggered when you click the grok button
 ||x.com/i/api/graphql/QAPGIKJVaPXYD-gO9kxc9w/GrokHome^
@@ -52,7 +59,7 @@ search.brave.com###submit-llm-button
 !! viewing past conversations
 ||x.com/i/api/graphql/9Hyh5D4-WXLnExZkONSkZg/GrokHistory^
 !! deleting conversations
-# ||x.com/i/api/graphql/TlKHSWVMVeaa-i7dqQqFQA/ConversationItem_DeleteConversationMutation^
+!||x.com/i/api/graphql/TlKHSWVMVeaa-i7dqQqFQA/ConversationItem_DeleteConversationMutation^
 !! viewing media from past conversations
 ||x.com/i/api/graphql/azn3Sg0APPjb2Jtd7gqxsw/GrokMediaHistory^
 !! uploading media to grok
@@ -74,3 +81,20 @@ x.com##[aria-label="Primary"][role="navigation"] > a[aria-label="Grok"][role="li
 learn.microsoft.com###banner-holder
 learn.microsoft.com###article-header-page-actions > button[data-bi-name=ask-learn-assistant-entry]
 learn.microsoft.com###main > div[data-main-column] > div > div[data-id=ai-summary]
+
+
+! Other
+||asus-brand-assistant.asus.com^
+||asuschatapi.asus.com^
+||mfgpt.milanofinanza.it^
+||chat.cdn-plain.com^
+||chat.g4media.org^
+||chatnode.ai^
+||urbandictionary.ai^
+||indexfox.ai^
+||askmiso.com^
+||gotolstoy.com^
+||gist.ai^
+||divee.ai^
+||kapa.ai^
+||equally.ai^

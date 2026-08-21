@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: mlist - Barebones
 ! Description: Blocks non-critical resources to slim down pages.
-! Updated: 2026 July 25
+! Updated: 2026 August 21
 ! Expires: 14 days
 ! Homepage: https://github.com/MaxxusX/domain-blocklist/
 
@@ -9,14 +9,41 @@
 ! Twitter
 ||api.x.com/1.1/hashflags.json^$xhr
 
-! Cloudflare email protection
-/cdn-cgi/l/email-protection^
-/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js^$script
-
-||js.stripe.com^$3p
-
-||www.googleapis.com/webfonts^
 
 ! Reddit
 !! manifest.json and favicons
 ||redditstatic.com/desktop2x/img/favicon^$image,other
+
+
+! Google Fonts
+||www.googleapis.com/webfonts^
+
+
+! Stripe
+||js.stripe.com^$3p
+
+
+! Medium
+||medium.com/_/graphql^
+||medium.com/cdn-cgi^
+
+
+! Google & Chrome Developer Docs
+||developers.google.com/_d/profile/ogb^$1p,xhr
+||developer.chrome.com/_d/profile/ogb^$1p,xhr
+||www.gstatic.com/devrel-devsite/prod/*/developers/js/devsite_devsite_a11y_announce_module.js^$3p,script
+||www.gstatic.com/devrel-devsite/prod/*/developers/js/devsite_devsite_search_module.js^$3p,script
+||www.gstatic.com/devrel-devsite/prod/*/developers/js/devsite_devsite_content_module.js^$3p,script
+||www.gstatic.com/devrel-devsite/prod/*/developers/js/devsite_devsite_badger_module.js^$3p,script
+||www.gstatic.com/devrel-devsite/prod/*/developers/js/devsite_devsite_actions_module.js^$3p,script
+||www.gstatic.com/devrel-devsite/prod/*/developers/js/devsite_devsite_badge_awarded_module.js^$3p,script
+||www.gstatic.com/devrel-devsite/prod/*/developers/js/devsite_devsite_tooltip_module.js^$3p,script
+||www.gstatic.com/devrel-devsite/prod/*/developers/js/devsite_devsite_feature_tooltip_module.js^$3p,script
+||www.gstatic.com/devrel-devsite/prod/*/developers/js/devsite_devsite_snackbar_module.js^$3p,script
+||www.gstatic.com/devrel-devsite/prod/*/developers/js/devsite_devsite_sitemask_module.js^$3p,script
+||www.gstatic.com/devrel-devsite/prod/*/developers/js/devsite_devsite_apix_module.js^$3p,script
+||www.gstatic.com/devrel-devsite/prod/*/developers/js/devsite_devsite_book_nav_module.js^$3p,script
+||www.gstatic.com/devrel-devsite/prod/*/developers/js/devsite_devsite_nav_buttons_module.js^$3p,script
+||www.gstatic.com/devrel-devsite/prod/*/developers/js/devsite_app_module.js^$3p,script
+||www.gstatic.com/devrel-devsite/prod/*/developers/js/devsite_devsite_progress_module.js^$3p,script
+developers.google.com,developer.chrome.com##devsite-progress
